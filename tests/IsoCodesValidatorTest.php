@@ -4,7 +4,7 @@ namespace Pixelpeter\IsoCodesValidation;
 
 use Validator;
 
-class IsoCodesValidatorTest extends \TestCase
+class IsoCodesValidatorTest extends TestCase
 {
 
     /**
