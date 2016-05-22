@@ -1,7 +1,7 @@
 # Laravel 5 IsoCodes Validation
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/pixelpeter/laravel5-isocodes-validation.svg?style=flat-square)](https://packagist.org/packages/pixelpeter/laravel5-isocodes-validation)
-[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
+[![Software License](https://img.shields.io/badge/license-GPL-brightgreen.svg?style=flat-square)](LICENSE.md)
 [![Travis Build](https://img.shields.io/travis/pixelpeter/laravel5-isocodes-validation/master.svg?style=flat-square)](https://travis-ci.org/pixelpeter/laravel5-isocodes-validation)
 [![Scrutinizer Quality](https://img.shields.io/scrutinizer/g/pixelpeter/laravel5-isocodes-validation.svg?style=flat-square)](https://scrutinizer-ci.com/g/pixelpeter/laravel5-isocodes-validation)
 [![Scrutinizer Build](https://img.shields.io/scrutinizer/build/g/pixelpeter/laravel5-isocodes-validation.svg?style=flat-square)](https://scrutinizer-ci.com/g/pixelpeter/laravel5-isocodes-validation)
