@@ -8,7 +8,7 @@
     "validation"
   ],
   "homepage": "https://github.com/pixelpeter/laravel5-isocodes-validation",
-  "license": "MIT",
+  "license": "GPL-3.0",
   "authors": [
     {
       "name": "Peter Haak",
