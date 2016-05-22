@@ -154,7 +154,7 @@ class IsoCodesValidator extends BaseValidator
 
     public function validateIpaddress($attribute, $value, $parameters)
     {
-        return $this->runIsoCodesValidator(\IsoCodes\Ip::class, $value);
+        return $this->runIsoCodesValidator(\IsoCodes\IP::class, $value);
     }
 
     /**
