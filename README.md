@@ -7,6 +7,8 @@
 [![Scrutinizer Build](https://img.shields.io/scrutinizer/build/g/pixelpeter/laravel5-isocodes-validation.svg?style=flat-square)](https://scrutinizer-ci.com/g/pixelpeter/laravel5-isocodes-validation)
 [![SensioLabsInsight](https://img.shields.io/sensiolabs/i/32635b20-a120-46de-a1af-4ce876bdcfbe.svg?style=flat-square)](https://insight.sensiolabs.com/projects/32635b20-a120-46de-a1af-4ce876bdcfbe)
 [![Total Downloads](https://img.shields.io/packagist/dt/pixelpeter/laravel5-isocodes-validation.svg?style=flat-square)](https://packagist.org/packages/pixelpeter/laravel5-isocodes-validation)
+[![Dependency Status](https://www.versioneye.com/user/projects/5741a445ce8d0e004505ea3c/badge.svg?style=flat)](https://www.versioneye.com/user/projects/5741a445ce8d0e004505ea3c)
+[![Coverage Status](https://coveralls.io/repos/github/pixelpeter/laravel5-isocodes-validation/badge.svg?branch=master)](https://coveralls.io/github/pixelpeter/laravel5-isocodes-validation?branch=master)
 
 A simple Laravel 5 wrapper for the [IsoCodes Validation library](https://github.com/ronanguilloux/IsoCodes) from ronanguilloux.
 
