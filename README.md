@@ -99,4 +99,4 @@ vendor/bin/phpunit
 
 ## License
 
-The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+GNU General Public License v3.0 only. Please see [License File](LICENSE.md) for more information.

@@ -616,7 +616,6 @@ class IsoCodesValidator extends BaseValidator
      */
     public function replaceIsbn($message, $attribute, $rule, $parameter)
     {
-        // dd($message, $attribute, $rule, $parameter);
         return $this->valueReplacer($message, $attribute);
     }
 
