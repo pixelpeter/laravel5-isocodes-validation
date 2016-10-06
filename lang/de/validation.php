@@ -2,6 +2,7 @@
 
 return [
     'bban'                      => 'Der Wert ":value" von :attribute ist kein gültiger BBAN Code.',
+    'bsn'                       => 'Der Wert ":value" von :attribute ist kein gültiger BSN.',
     'cif'                       => 'Der Wert ":value" von :attribute ist kein gültiger CIF Code.',
     'creditcard'                => 'Der Wert ":value" von :attribute ist keine gültige Kreditkartennummer.',
     'ean8'                      => 'Der Wert ":value" von :attribute ist kein gültiger EAN8 Code.',
