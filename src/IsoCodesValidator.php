@@ -23,6 +23,19 @@ class IsoCodesValidator extends BaseValidator
     }
 
     /**
+     * Validate a BSN (Dutch citizen service number)
+     *
+     * @param $attribute
+     * @param $value
+     * @param $parameters
+     * @return mixed
+     */
+    public function validateBsn($attribute, $value, $parameters)
+    {
+        return $this->runIsoCodesValidator(\IsoCodes\Bsn::class, $value);
+    }
+
+    /**
      * Validate a CIF code
      *
      * @param $attribute
@@ -447,6 +460,20 @@ class IsoCodesValidator extends BaseValidator
      * @return mixed
      */
     public function replaceBban($message, $attribute, $rule, $parameter)
+    {
+        return $this->valueReplacer($message, $attribute);
+    }
+
+    /**
+     * Replace all place-holders for the bsn rule
+     *
+     * @param $message
+     * @param $attribute
+     * @param $rule
+     * @param $parameter
+     * @return mixed
+     */
+    public function replaceBsn($message, $attribute, $rule, $parameter)
     {
         return $this->valueReplacer($message, $attribute);
     }
