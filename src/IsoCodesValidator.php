@@ -88,6 +88,58 @@ class IsoCodesValidator extends BaseValidator
     }
 
     /**
+     * Validate a Global Document Type Identifier (GDTI)
+     *
+     * @param $attribute
+     * @param $value
+     * @param $parameters
+     * @return mixed
+     */
+    public function validateGdti($attribute, $value, $parameters)
+    {
+        return $this->runIsoCodesValidator(\IsoCodes\Gdti::class, $value);
+    }
+
+    /**
+     * Validate a Global Location Number (GLN)
+     *
+     * @param $attribute
+     * @param $value
+     * @param $parameters
+     * @return mixed
+     */
+    public function validateGln($attribute, $value, $parameters)
+    {
+        return $this->runIsoCodesValidator(\IsoCodes\Gln::class, $value);
+    }
+
+    /**
+     * Validate a Global Returnable Asset Identifier
+     *
+     * @param $attribute
+     * @param $value
+     * @param $parameters
+     * @return mixed
+     */
+    public function validateGrai($attribute, $value, $parameters)
+    {
+        return $this->runIsoCodesValidator(\IsoCodes\Grai::class, $value);
+    }
+
+    /**
+     * Validate a Global Service Relation Number (GS1)
+     *
+     * @param $attribute
+     * @param $value
+     * @param $parameters
+     * @return mixed
+     */
+    public function validateGsrn($attribute, $value, $parameters)
+    {
+        return $this->runIsoCodesValidator(\IsoCodes\Gsrn::class, $value);
+    }
+
+    /**
      * Validate a GTIN-8 code
      *
      * @param $attribute
@@ -165,6 +217,14 @@ class IsoCodesValidator extends BaseValidator
         return $this->runIsoCodesValidator(\IsoCodes\Insee::class, $value);
     }
 
+    /**
+     * Validate an IP address
+     *
+     * @param $attribute
+     * @param $value
+     * @param $parameters
+     * @return mixed
+     */
     public function validateIpaddress($attribute, $value, $parameters)
     {
         return $this->runIsoCodesValidator(\IsoCodes\IP::class, $value);
@@ -197,6 +257,32 @@ class IsoCodesValidator extends BaseValidator
     public function validateIsin($attribute, $value, $parameters)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Isin::class, $value);
+    }
+
+    /**
+     * Validate an "International Standard Music Number" or ISMN (ISO 10957)
+     *
+     * @param $attribute
+     * @param $value
+     * @param $parameters
+     * @return mixed
+     */
+    public function validateIsmn($attribute, $value, $parameters)
+    {
+        return $this->runIsoCodesValidator(\IsoCodes\Ismn::class, $value);
+    }
+
+    /**
+     * Validate an "International Standard Musical Work Code" (ISWC)
+     *
+     * @param $attribute
+     * @param $value
+     * @param $parameters
+     * @return mixed
+     */
+    public function validateIswc($attribute, $value, $parameters)
+    {
+        return $this->runIsoCodesValidator(\IsoCodes\Iswc::class, $value);
     }
 
     /**
@@ -346,6 +432,19 @@ class IsoCodesValidator extends BaseValidator
     public function validateSwiftBic($attribute, $value, $parameters)
     {
         return $this->runIsoCodesValidator(\IsoCodes\SwiftBic::class, $value);
+    }
+
+    /**
+     * Validate a Unique Device Identification
+     *
+     * @param $attribute
+     * @param $value
+     * @param $parameters
+     * @return mixed
+     */
+    public function validateUdi($attribute, $value, $parameters)
+    {
+        return $this->runIsoCodesValidator(\IsoCodes\Udi::class, $value);
     }
 
     /**
@@ -535,6 +634,62 @@ class IsoCodesValidator extends BaseValidator
     }
 
     /**
+     * Replace all place-holders for the gdti rule
+     *
+     * @param $message
+     * @param $attribute
+     * @param $rule
+     * @param $parameter
+     * @return mixed
+     */
+    public function replaceGdti($message, $attribute, $rule, $parameter)
+    {
+        return $this->valueReplacer($message, $attribute);
+    }
+
+    /**
+     * Replace all place-holders for the gln rule
+     *
+     * @param $message
+     * @param $attribute
+     * @param $rule
+     * @param $parameter
+     * @return mixed
+     */
+    public function replaceGln($message, $attribute, $rule, $parameter)
+    {
+        return $this->valueReplacer($message, $attribute);
+    }
+
+    /**
+     * Replace all place-holders for the grai rule
+     *
+     * @param $message
+     * @param $attribute
+     * @param $rule
+     * @param $parameter
+     * @return mixed
+     */
+    public function replaceGrai($message, $attribute, $rule, $parameter)
+    {
+        return $this->valueReplacer($message, $attribute);
+    }
+
+    /**
+     * Replace all place-holders for the gsrn rule
+     *
+     * @param $message
+     * @param $attribute
+     * @param $rule
+     * @param $parameter
+     * @return mixed
+     */
+    public function replaceGsrn($message, $attribute, $rule, $parameter)
+    {
+        return $this->valueReplacer($message, $attribute);
+    }
+
+    /**
      * Replace all place-holders for the gitin8 rule
      *
      * @param $message
@@ -656,6 +811,34 @@ class IsoCodesValidator extends BaseValidator
      * @return mixed
      */
     public function replaceIsin($message, $attribute, $rule, $parameter)
+    {
+        return $this->valueReplacer($message, $attribute);
+    }
+
+    /**
+     * Replace all place-holders for the ismn rule
+     *
+     * @param $message
+     * @param $attribute
+     * @param $rule
+     * @param $parameter
+     * @return mixed
+     */
+    public function replaceIsmn($message, $attribute, $rule, $parameter)
+    {
+        return $this->valueReplacer($message, $attribute);
+    }
+
+    /**
+     * Replace all place-holders for the iswc rule
+     *
+     * @param $message
+     * @param $attribute
+     * @param $rule
+     * @param $parameter
+     * @return mixed
+     */
+    public function replaceIswc($message, $attribute, $rule, $parameter)
     {
         return $this->valueReplacer($message, $attribute);
     }
@@ -813,6 +996,48 @@ class IsoCodesValidator extends BaseValidator
      * @return mixed
      */
     public function replaceSwiftBic($message, $attribute, $rule, $parameter)
+    {
+        return $this->valueReplacer($message, $attribute);
+    }
+
+    /**
+     * Replace all place-holders for the udi rule
+     *
+     * @param $message
+     * @param $attribute
+     * @param $rule
+     * @param $parameter
+     * @return mixed
+     */
+    public function replaceUdi($message, $attribute, $rule, $parameter)
+    {
+        return $this->valueReplacer($message, $attribute);
+    }
+
+    /**
+     * Replace all place-holders for the uknin rule
+     *
+     * @param $message
+     * @param $attribute
+     * @param $rule
+     * @param $parameter
+     * @return mixed
+     */
+    public function replaceUknin($message, $attribute, $rule, $parameter)
+    {
+        return $this->valueReplacer($message, $attribute);
+    }
+
+    /**
+     * Replace all place-holders for the upca rule
+     *
+     * @param $message
+     * @param $attribute
+     * @param $rule
+     * @param $parameter
+     * @return mixed
+     */
+    public function replaceUpca($message, $attribute, $rule, $parameter)
     {
         return $this->valueReplacer($message, $attribute);
     }

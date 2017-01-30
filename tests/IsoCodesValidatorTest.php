@@ -84,12 +84,15 @@ class IsoCodesValidatorTest extends TestCase
     {
         return [
             ['bban', '15459450000411700920U62'],
+            ['bsn', '075278431'],
             ['cif', 'N0032484H'],
-            // Open issue:  Creditcard validation does not work properly with text #99
-            // https://github.com/ronanguilloux/IsoCodes/issues/99
             ['creditcard', '4111111111111111'],
             ['ean8', '90311017'],
             ['ean13', '4719512002889'],
+            ['gdti', '4719512002889 1234567890 123456'],
+            ['gln', '0614141000012'],
+            ['grai', '04719512002889 1234567890 12345A'],
+            ['gsrn', '735005385000000011'],
             ['gtin8', '12345670'],
             ['gtin12', '1-23456-78999-9'],
             ['gtin13', '4006381333931'],
@@ -98,6 +101,8 @@ class IsoCodesValidatorTest extends TestCase
             ['insee', '253012B073004'],
             ['ipaddress', '73.194.66.94'],
             ['isin', 'US0378331005'],
+            ['ismn', '979-0-2600-0043-8'],
+            ['iswc', 'T-000.000.001-0'],
             ['mac', '01-2d-4c-ef-89-59'],
             ['nif', '04381012H'],
             ['sedol', 'B0YBKJ7'],
@@ -107,6 +112,7 @@ class IsoCodesValidatorTest extends TestCase
             ['ssn', '651-01-3431'],
             ['structured_communication', '123456789002'],
             ['swift_bic', 'BCEELULL'],
+            ['udi', '07610221010301'],
             ['uknin', 'EH123456A'],
             ['upca', '1-23456-78999-9'],
             ['vat', 'LV12345678901'],
@@ -131,6 +137,16 @@ class IsoCodesValidatorTest extends TestCase
                 ],
                 'message' => 'The value "invalid" of bban is not a valid BBAN code.'
             ],
+            // BSN
+            [
+                'payload' => [
+                    'bsn' => 'invalid'
+                ],
+                'rules' => [
+                    'bsn' => 'bsn'
+                ],
+                'message' => 'The value "invalid" of bsn is not a valid BSN.'
+            ],
             // CIF
             [
                 'payload' => [
@@ -142,16 +158,14 @@ class IsoCodesValidatorTest extends TestCase
                 'message' => 'The value "invalid" of cif is not a valid CIF code.'
             ],
             // CREDITCARD
-            // Open issue:  Creditcard validation does not work properly with text #99
-            // https://github.com/ronanguilloux/IsoCodes/issues/99
             [
                 'payload' => [
-                    'creditcard' => '1234567890'
+                    'creditcard' => 'invalid'
                 ],
                 'rules' => [
                     'creditcard' => 'creditcard'
                 ],
-                'message' => 'The value "1234567890" of creditcard is not a valid credit card number.'
+                'message' => 'The value "invalid" of creditcard is not a valid credit card number.'
             ],
             // EAN8
             [
@@ -172,6 +186,46 @@ class IsoCodesValidatorTest extends TestCase
                     'ean13' => 'ean13'
                 ],
                 'message' => 'The value "invalid" of ean13 is not a valid EAN13 code.'
+            ],
+            // GDTI
+            [
+                'payload' => [
+                    'gdti' => 'invalid'
+                ],
+                'rules' => [
+                    'gdti' => 'gdti'
+                ],
+                'message' => 'The value "invalid" of gdti is not a valid Global Document Type Identifier (GDTI).'
+            ],
+            // GLN
+            [
+                'payload' => [
+                    'gln' => 'invalid'
+                ],
+                'rules' => [
+                    'gln' => 'gln'
+                ],
+                'message' => 'The value "invalid" of gln is not a valid Global Location Number (GLN).'
+            ],
+            // GRAI
+            [
+                'payload' => [
+                    'grai' => 'invalid'
+                ],
+                'rules' => [
+                    'grai' => 'grai'
+                ],
+                'message' => 'The value "invalid" of grai is not a valid Global Returnable Asset Identifier.'
+            ],
+            // GSRN
+            [
+                'payload' => [
+                    'gsrn' => 'invalid'
+                ],
+                'rules' => [
+                    'gsrn' => 'gsrn'
+                ],
+                'message' => 'The value "invalid" of gsrn is not a valid Global Service Relation Number (GS1).'
             ],
             // GTIN8
             [
@@ -263,6 +317,26 @@ class IsoCodesValidatorTest extends TestCase
                     'isin' => 'isin'
                 ],
                 'message' => 'The value "invalid" of isin is not a valid ISIN.'
+            ],
+            // ISMN
+            [
+                'payload' => [
+                    'ismn' => 'invalid'
+                ],
+                'rules' => [
+                    'ismn' => 'ismn'
+                ],
+                'message' => 'The value "invalid" of ismn is not a valid International Standard Music Number or ISMN (ISO 10957)',
+            ],
+            // ISWC
+            [
+                'payload' => [
+                    'iswc' => 'invalid'
+                ],
+                'rules' => [
+                    'iswc' => 'iswc'
+                ],
+                'message' => 'The value "invalid" of iswc is not a valid International Standard Musical Work Code (ISWC)'
             ],
             // MAC
             [
@@ -376,25 +450,35 @@ class IsoCodesValidatorTest extends TestCase
                 ],
                 'message' => 'The value "invalid" of swift bic is not a valid SWIFT/BIC.'
             ],
+            // UDI
+            [
+                'payload' => [
+                    'udi' => 'invalid'
+                ],
+                'rules' => [
+                    'udi' => 'udi'
+                ],
+                'message' => 'The value "invalid" of udi is not a valid UDI.'
+            ],
             // UKNIN
             [
                 'payload' => [
-                    'ssn' => 'invalid'
+                    'uknin' => 'invalid'
                 ],
                 'rules' => [
-                    'ssn' => 'ssn'
+                    'uknin' => 'uknin'
                 ],
-                'message' => 'The value "invalid" of ssn is not a valid SSN.'
+                'message' => 'The value "invalid" of uknin is not a valid UK National Insurance Number.'
             ],
             // UPCA
             [
                 'payload' => [
-                    'ssn' => 'invalid'
+                    'upca' => 'invalid'
                 ],
                 'rules' => [
-                    'ssn' => 'ssn'
+                    'upca' => 'upca'
                 ],
-                'message' => 'The value "invalid" of ssn is not a valid SSN.'
+                'message' => 'The value "invalid" of upca is not a valid UPCA.'
             ],
             // VAT
             [
