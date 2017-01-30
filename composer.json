@@ -19,7 +19,7 @@
   ],
   "require": {
     "php": ">=5.5.9",
-    "ronanguilloux/isocodes": "dev-master"
+    "ronanguilloux/isocodes": "^2.1"
   },
   "autoload": {
     "psr-4": {
