@@ -2,6 +2,18 @@
 
 All Notable changes for the Laravel 5 IsoCodes Validation  will be documented in this file
 
+## 1.2.0
+Added support for following validation rules
+- BSN
+- GDTI
+- GLN
+- GRAI
+- GSRN
+- ISMN
+- ISWC
+- UDI
+- UPCA
+
 ## 1.1.0
 - Laravel 5.4 compatibility 
 
