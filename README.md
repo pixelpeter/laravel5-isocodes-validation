@@ -19,7 +19,7 @@ A simple Laravel 5 wrapper for the [IsoCodes Validation library](https://github.
 composer require pixelpeter/laravel5-isocodes-validation
 ```
 
-### Step 2: Add the Service Provider
+### Step 2: Add the Service Provider (not needed with v2.x because of auto discovery)
 Add the service provider in `app/config/app.php`
 ```php
 'provider' => [
