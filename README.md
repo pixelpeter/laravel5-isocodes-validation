@@ -10,7 +10,7 @@
 [![Dependency Status](https://beta.gemnasium.com/badges/github.com/pixelpeter/laravel5-genderize-api-client.svg)](https://beta.gemnasium.com/projects/github.com/pixelpeter/laravel5-genderize-api-client)
 [![Coverage Status](https://coveralls.io/repos/github/pixelpeter/laravel5-isocodes-validation/badge.svg?branch=master)](https://coveralls.io/github/pixelpeter/laravel5-isocodes-validation?branch=master)
 
-A simple Laravel 5 wrapper for the [IsoCodes Validation library](https://github.com/ronanguilloux/IsoCodes) from ronanguilloux.
+A simple Laravel 5 wrapper for the [IsoCodes Validation library](https://github.com/ronanguilloux/IsoCodes) from ronanguilloux.
 
 ## Installation
 
