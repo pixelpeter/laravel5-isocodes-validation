@@ -494,26 +494,14 @@ class IsoCodesValidator extends BaseValidator
      * @param $parameters
      * @return mixed
      */
-    public function _validateZipcode($attribute, $value, $parameters)
-    {
-        $this->requireParameterCount(1, $parameters, 'zipcode');
-        $country = Arr::get($this->data, $parameters[0]);
-
-        return $this->runIsoCodesValidator(\IsoCodes\ZipCode::class, $value, $country);
-    }
-
     public function validateZipcode($attribute, $value, $parameters)
     {
         $this->requireParameterCount(1, $parameters, 'zipcode');
-
-        if ($keys = $this->getExplicitKeys($attribute)) {
-            $parameters = $this->replaceAsterisksInParameters($parameters, $keys);
-        }
-
         $country = Arr::get($this->data, $parameters[0]);
 
         return $this->runIsoCodesValidator(\IsoCodes\ZipCode::class, $value, $country);
     }
+
     /**
      * Execute the validation function
      * and catch every other Exception from underlying libraries
@@ -909,7 +897,7 @@ class IsoCodesValidator extends BaseValidator
     protected function replacePhonenumber($message, $attribute, $rule, $parameter)
     {
         $message = $this->valueReplacer($message, $attribute);
-        $message = $this->countryReplacer($message, $parameter[0]);
+        $message = $this->countryReplacer($message, $parameter);
 
         return $message;
     }
@@ -1079,53 +1067,9 @@ class IsoCodesValidator extends BaseValidator
      */
     public function replaceZipcode($message, $attribute, $rule, $parameter)
     {
-        var_dump($message, $attribute, $this->getValue($attribute), $parameter);
-
-        var_dump(
-            Arr::get($this->data, 'data.0.country')
-        );
         $message = $this->valueReplacer($message, $attribute);
-        var_dump($message);
-        $message = $this->valueReplacer($message, $parameter[0]);
-        var_dump($message);
-        // $message = $this->countryReplacer($message, $parameter);
-        // dd($message, $attribute, $rule, $parameter[0]);
+        $message = $this->countryReplacer($message, $parameter);
+
         return $message;
-    }
-
-    /**
-     * Get the explicit keys from an attribute flattened with dot notation.
-     *
-     * E.g. 'foo.1.bar.spark.baz' -> [1, 'spark'] for 'foo.*.bar.*.baz'
-     *
-     * @param  string  $attribute
-     * @return array
-     */
-    protected function getExplicitKeys($attribute)
-    {
-        $pattern = str_replace('\*', '([^\.]+)', preg_quote($this->getPrimaryAttribute($attribute)));
-        if (preg_match('/^'.$pattern.'/', $attribute, $keys)) {
-            array_shift($keys);
-            return $keys;
-        }
-        return [];
-    }
-
-    /**
-     * Get the primary attribute name.
-     *
-     * For example, if "name.0" is given, "name.*" will be returned.
-     *
-     * @param  string  $attribute
-     * @return string
-     */
-    protected function getPrimaryAttribute($attribute)
-    {
-        foreach ($this->implicitAttributes as $unparsed => $parsed) {
-            if (in_array($attribute, $parsed)) {
-                return $unparsed;
-            }
-        }
-        return $attribute;
     }
 }
