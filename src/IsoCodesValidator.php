@@ -747,7 +747,7 @@ class IsoCodesValidator extends BaseValidator
 
     /**
      * Replace all place-holders for the iban rule
-     * 
+     *
      * @param $message
      * @param $attribute
      * @param $rule
@@ -761,7 +761,7 @@ class IsoCodesValidator extends BaseValidator
 
     /**
      * Replace all place-holders for the insee rule
-     * 
+     *
      * @param $message
      * @param $attribute
      * @param $rule
@@ -775,7 +775,7 @@ class IsoCodesValidator extends BaseValidator
 
     /**
      * Replace all place-holders for the ipaddress rule
-     * 
+     *
      * @param $message
      * @param $attribute
      * @param $rule
@@ -789,7 +789,7 @@ class IsoCodesValidator extends BaseValidator
 
     /**
      * Replace all place-holders for the isbn rule
-     * 
+     *
      * @param $message
      * @param $attribute
      * @param $rule
@@ -803,7 +803,7 @@ class IsoCodesValidator extends BaseValidator
 
     /**
      * Replace all place-holders for the isin rule
-     * 
+     *
      * @param $message
      * @param $attribute
      * @param $rule
@@ -845,7 +845,7 @@ class IsoCodesValidator extends BaseValidator
 
     /**
      * Replace all place-holders for the mac rule
-     * 
+     *
      * @param $message
      * @param $attribute
      * @param $rule
@@ -859,7 +859,7 @@ class IsoCodesValidator extends BaseValidator
 
     /**
      * Replace all place-holders for the nif rule
-     * 
+     *
      * @param $message
      * @param $attribute
      * @param $rule
@@ -873,7 +873,7 @@ class IsoCodesValidator extends BaseValidator
 
     /**
      * Replace all place-holders for the organisme_type12_norme_b2 rule
-     * 
+     *
      * @param $message
      * @param $attribute
      * @param $rule
@@ -887,7 +887,7 @@ class IsoCodesValidator extends BaseValidator
 
     /**
      * Replace all place-holders for the phonenumber rule
-     * 
+     *
      * @param $message
      * @param $attribute
      * @param $rule
@@ -904,7 +904,7 @@ class IsoCodesValidator extends BaseValidator
 
     /**
      * Replace all place-holders for the sedol rule
-     * 
+     *
      * @param $message
      * @param $attribute
      * @param $rule
@@ -918,7 +918,7 @@ class IsoCodesValidator extends BaseValidator
 
     /**
      * Replace all place-holders for the siren rule
-     * 
+     *
      * @param $message
      * @param $attribute
      * @param $rule
@@ -932,7 +932,7 @@ class IsoCodesValidator extends BaseValidator
 
     /**
      * Replace all place-holders for the siret rule
-     * 
+     *
      * @param $message
      * @param $attribute
      * @param $rule
@@ -946,7 +946,7 @@ class IsoCodesValidator extends BaseValidator
 
     /**
      * Replace all place-holders for the sscc rule
-     * 
+     *
      * @param $message
      * @param $attribute
      * @param $rule
@@ -960,7 +960,7 @@ class IsoCodesValidator extends BaseValidator
 
     /**
      * Replace all place-holders for the ssn rule
-     * 
+     *
      * @param $message
      * @param $attribute
      * @param $rule
@@ -974,7 +974,7 @@ class IsoCodesValidator extends BaseValidator
 
     /**
      * Replace all place-holders for the structured_communication rule
-     * 
+     *
      * @param $message
      * @param $attribute
      * @param $rule
@@ -988,7 +988,7 @@ class IsoCodesValidator extends BaseValidator
 
     /**
      * Replace all place-holders for the swift_bic rule
-     * 
+     *
      * @param $message
      * @param $attribute
      * @param $rule
@@ -1043,8 +1043,22 @@ class IsoCodesValidator extends BaseValidator
     }
 
     /**
+     * Replace all place-holders for the vat rule
+     *
+     * @param $message
+     * @param $attribute
+     * @param $rule
+     * @param $parameter
+     * @return mixed
+     */
+    public function replaceVat($message, $attribute, $rule, $parameter)
+    {
+        return $this->valueReplacer($message, $attribute);
+    }
+
+    /**
      * Replace all place-holders for the zipcode rule
-     * 
+     *
      * @param $message
      * @param $attribute
      * @param $rule

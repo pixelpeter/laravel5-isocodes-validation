@@ -483,12 +483,12 @@ class IsoCodesValidatorTest extends TestCase
             // VAT
             [
                 'payload' => [
-                    'ssn' => 'invalid'
+                    'vat' => 'invalid'
                 ],
                 'rules' => [
-                    'ssn' => 'ssn'
+                    'vat' => 'vat'
                 ],
-                'message' => 'The value "invalid" of ssn is not a valid SSN.'
+                'message' => 'The value "invalid" of vat is not a valid VAT.'
             ],
             // ZIPCODE
             [
