@@ -503,4 +503,28 @@ class IsoCodesValidatorTest extends TestCase
             ],
         ];
     }
+
+    /**
+     * Test each validator with a reference value returns true for valid data
+     *
+     * @test
+     */
+    public function it_validates_zipcodes_with_dot_notation_and_wildcard()
+    {
+        $payload = [
+            [
+                'country' => 'US',
+                'zipcode' => 902010
+            ],
+            [
+                'country' => 'FR',
+                'zipcode' => 63741
+            ]
+
+        ];
+
+        $validator = Validator::make('payload.*.zip', 'payload.*.country');
+
+        $this->assertTrue($validator->passes());
+    }
 }
