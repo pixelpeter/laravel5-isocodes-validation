@@ -16,7 +16,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $value
      * @return mixed
      */
-    public function validateBban($attribute, $value)
+    public function validateBban(/** @scrutinizer ignore-unused */ $attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Bban::class, $value);
     }
@@ -28,7 +28,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $value
      * @return mixed
      */
-    public function validateBsn($attribute, $value)
+    public function validateBsn(/** @scrutinizer ignore-unused */ $attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Bsn::class, $value);
     }
@@ -40,7 +40,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $value
      * @return mixed
      */
-    public function validateCif($attribute, $value)
+    public function validateCif(/** @scrutinizer ignore-unused */ $attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Cif::class, $value);
     }
@@ -52,7 +52,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $value
      * @return mixed
      */
-    public function validateCreditcard($attribute, $value)
+    public function validateCreditcard(/** @scrutinizer ignore-unused */ $attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\CreditCard::class, $value);
     }
@@ -64,7 +64,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $value
      * @return mixed
      */
-    public function validateEan8($attribute, $value)
+    public function validateEan8(/** @scrutinizer ignore-unused */ $attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Ean8::class, $value);
     }
@@ -76,7 +76,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $value
      * @return mixed
      */
-    public function validateEan13($attribute, $value)
+    public function validateEan13(/** @scrutinizer ignore-unused */ $attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Ean13::class, $value);
     }
@@ -88,7 +88,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $value
      * @return mixed
      */
-    public function validateGdti($attribute, $value)
+    public function validateGdti(/** @scrutinizer ignore-unused */ $attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Gdti::class, $value);
     }
@@ -100,7 +100,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $value
      * @return mixed
      */
-    public function validateGln($attribute, $value)
+    public function validateGln(/** @scrutinizer ignore-unused */ $attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Gln::class, $value);
     }
@@ -112,7 +112,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $value
      * @return mixed
      */
-    public function validateGrai($attribute, $value)
+    public function validateGrai(/** @scrutinizer ignore-unused */ $attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Grai::class, $value);
     }
@@ -124,7 +124,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $value
      * @return mixed
      */
-    public function validateGsrn($attribute, $value)
+    public function validateGsrn(/** @scrutinizer ignore-unused */ $attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Gsrn::class, $value);
     }
@@ -136,7 +136,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $value
      * @return mixed
      */
-    public function validateGtin8($attribute, $value)
+    public function validateGtin8(/** @scrutinizer ignore-unused */ $attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Gtin8::class, $value);
     }
@@ -148,7 +148,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $value
      * @return mixed
      */
-    public function validateGtin12($attribute, $value)
+    public function validateGtin12(/** @scrutinizer ignore-unused */ $attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Gtin12::class, $value);
     }
@@ -160,7 +160,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $value
      * @return mixed
      */
-    public function validateGtin13($attribute, $value)
+    public function validateGtin13(/** @scrutinizer ignore-unused */ $attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Gtin13::class, $value);
     }
@@ -172,7 +172,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $value
      * @return mixed
      */
-    public function validateGtin14($attribute, $value)
+    public function validateGtin14(/** @scrutinizer ignore-unused */ $attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Gtin14::class, $value);
     }
@@ -184,7 +184,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $value
      * @return mixed
      */
-    public function validateIban($attribute, $value)
+    public function validateIban(/** @scrutinizer ignore-unused */ $attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Iban::class, $value);
     }
@@ -196,7 +196,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $value
      * @return mixed
      */
-    public function validateInsee($attribute, $value)
+    public function validateInsee(/** @scrutinizer ignore-unused */ $attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Insee::class, $value);
     }
@@ -208,7 +208,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $value
      * @return mixed
      */
-    public function validateIpaddress($attribute, $value)
+    public function validateIpaddress(/** @scrutinizer ignore-unused */ $attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\IP::class, $value);
     }
@@ -236,7 +236,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $value
      * @return mixed
      */
-    public function validateIsin($attribute, $value)
+    public function validateIsin(/** @scrutinizer ignore-unused */ $attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Isin::class, $value);
     }
@@ -248,7 +248,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $value
      * @return mixed
      */
-    public function validateIsmn($attribute, $value)
+    public function validateIsmn(/** @scrutinizer ignore-unused */ $attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Ismn::class, $value);
     }
@@ -260,7 +260,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $value
      * @return mixed
      */
-    public function validateIswc($attribute, $value)
+    public function validateIswc(/** @scrutinizer ignore-unused */ $attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Iswc::class, $value);
     }
@@ -272,7 +272,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $value
      * @return mixed
      */
-    public function validateMac($attribute, $value)
+    public function validateMac(/** @scrutinizer ignore-unused */ $attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Mac::class, $value);
     }
@@ -284,7 +284,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $value
      * @return mixed
      */
-    public function validateNif($attribute, $value)
+    public function validateNif(/** @scrutinizer ignore-unused */ $attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Nif::class, $value);
     }
@@ -328,7 +328,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $value
      * @return mixed
      */
-    public function validateSedol($attribute, $value)
+    public function validateSedol(/** @scrutinizer ignore-unused */ $attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Sedol::class, $value);
     }
@@ -340,7 +340,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $value
      * @return mixed
      */
-    public function validateSiren($attribute, $value)
+    public function validateSiren(/** @scrutinizer ignore-unused */ $attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Siren::class, $value);
     }
@@ -352,7 +352,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $value
      * @return mixed
      */
-    public function validateSiret($attribute, $value)
+    public function validateSiret(/** @scrutinizer ignore-unused */ $attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Siret::class, $value);
     }
@@ -364,7 +364,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $value
      * @return mixed
      */
-    public function validateSscc($attribute, $value)
+    public function validateSscc(/** @scrutinizer ignore-unused */ $attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Sscc::class, $value);
     }
@@ -376,7 +376,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $value
      * @return mixed
      */
-    public function validateSsn($attribute, $value)
+    public function validateSsn(/** @scrutinizer ignore-unused */ $attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Ssn::class, $value);
     }
@@ -388,7 +388,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $value
      * @return mixed
      */
-    public function validateStructuredCommunication($attribute, $value)
+    public function validateStructuredCommunication(/** @scrutinizer ignore-unused */ $attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\StructuredCommunication::class, $value);
     }
@@ -400,7 +400,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $value
      * @return mixed
      */
-    public function validateSwiftBic($attribute, $value)
+    public function validateSwiftBic(/** @scrutinizer ignore-unused */ $attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\SwiftBic::class, $value);
     }
@@ -412,7 +412,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $value
      * @return mixed
      */
-    public function validateUdi($attribute, $value)
+    public function validateUdi(/** @scrutinizer ignore-unused */ $attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Udi::class, $value);
     }
@@ -424,7 +424,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $value
      * @return mixed
      */
-    public function validateUknin($attribute, $value)
+    public function validateUknin(/** @scrutinizer ignore-unused */ $attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Uknin::class, $value);
     }
@@ -436,7 +436,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $value
      * @return mixed
      */
-    public function validateUpca($attribute, $value)
+    public function validateUpca(/** @scrutinizer ignore-unused */ $attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Upca::class, $value);
     }
@@ -448,7 +448,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $value
      * @return mixed
      */
-    public function validateVat($attribute, $value)
+    public function validateVat(/** @scrutinizer ignore-unused */ $attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Vat::class, $value);
     }
