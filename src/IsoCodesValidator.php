@@ -482,7 +482,7 @@ class IsoCodesValidator extends BaseValidator
             $parameters = $this->replaceAsterisksInParameters($parameters, $keys);
         }
 
-        return Arr::get($this->data, $parameters[0], $parameters[0]);
+        return (string) Arr::get($this->data, $parameters[0], $parameters[0]);
     }
 
     /**
