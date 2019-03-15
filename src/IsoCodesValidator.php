@@ -492,7 +492,7 @@ class IsoCodesValidator extends BaseValidator
      *
      * @param $validator
      * @param $value
-     * @param string $reference
+     * @param mixed $reference
      * @return mixed
      */
     protected function runIsoCodesValidator($validator, $value, $reference = '')
@@ -877,7 +877,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $parameter
      * @return mixed
      */
-    protected function replacePhonenumber($message, $attribute, $rule, $parameter)
+    protected function replacePhonenumber($message, $attribute, /** @scrutinizer ignore-unused */ $rule, $parameter)
     {
         $reference = $this->prepareReference($attribute, $parameter);
 
@@ -1050,7 +1050,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $parameter
      * @return mixed
      */
-    public function replaceZipcode($message, $attribute, $rule, $parameter)
+    public function replaceZipcode($message, $attribute, /** @scrutinizer ignore-unused */ $rule, $parameter)
     {
         $reference = $this->prepareReference($attribute, $parameter);
 
