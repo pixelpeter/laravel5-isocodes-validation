@@ -474,7 +474,7 @@ class IsoCodesValidator extends BaseValidator
      *
      * @param $attribute
      * @param $parameters
-     * @return string
+     * @return mixed
      */
     protected function prepareReference($attribute, $parameters)
     {
@@ -482,7 +482,7 @@ class IsoCodesValidator extends BaseValidator
             $parameters = $this->replaceAsterisksInParameters($parameters, $keys);
         }
 
-        return (string) Arr::get($this->data, $parameters[0], $parameters[0]);
+        return Arr::get($this->data, $parameters[0], $parameters[0]);
     }
 
     /**
@@ -541,7 +541,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $parameter
      * @return mixed
      */
-    public function replaceBban($message, $attribute, $rule, $parameter)
+    public function replaceBban($message, $attribute)
     {
         return $this->valueReplacer($message, $attribute);
     }
@@ -555,7 +555,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $parameter
      * @return mixed
      */
-    public function replaceBsn($message, $attribute, $rule, $parameter)
+    public function replaceBsn($message, $attribute)
     {
         return $this->valueReplacer($message, $attribute);
     }
@@ -569,7 +569,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $parameter
      * @return mixed
      */
-    public function replaceCif($message, $attribute, $rule, $parameter)
+    public function replaceCif($message, $attribute)
     {
         return $this->valueReplacer($message, $attribute);
     }
@@ -583,7 +583,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $parameter
      * @return mixed
      */
-    public function replaceCreditcard($message, $attribute, $rule, $parameter)
+    public function replaceCreditcard($message, $attribute)
     {
         return $this->valueReplacer($message, $attribute);
     }
@@ -597,7 +597,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $parameter
      * @return mixed
      */
-    public function replaceEan8($message, $attribute, $rule, $parameter)
+    public function replaceEan8($message, $attribute)
     {
         return $this->valueReplacer($message, $attribute);
     }
@@ -611,7 +611,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $parameter
      * @return mixed
      */
-    public function replaceEan13($message, $attribute, $rule, $parameter)
+    public function replaceEan13($message, $attribute)
     {
         return $this->valueReplacer($message, $attribute);
     }
@@ -625,7 +625,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $parameter
      * @return mixed
      */
-    public function replaceGdti($message, $attribute, $rule, $parameter)
+    public function replaceGdti($message, $attribute)
     {
         return $this->valueReplacer($message, $attribute);
     }
@@ -639,7 +639,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $parameter
      * @return mixed
      */
-    public function replaceGln($message, $attribute, $rule, $parameter)
+    public function replaceGln($message, $attribute)
     {
         return $this->valueReplacer($message, $attribute);
     }
@@ -653,7 +653,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $parameter
      * @return mixed
      */
-    public function replaceGrai($message, $attribute, $rule, $parameter)
+    public function replaceGrai($message, $attribute)
     {
         return $this->valueReplacer($message, $attribute);
     }
@@ -667,7 +667,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $parameter
      * @return mixed
      */
-    public function replaceGsrn($message, $attribute, $rule, $parameter)
+    public function replaceGsrn($message, $attribute)
     {
         return $this->valueReplacer($message, $attribute);
     }
@@ -681,7 +681,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $parameter
      * @return mixed
      */
-    public function replaceGtin8($message, $attribute, $rule, $parameter)
+    public function replaceGtin8($message, $attribute)
     {
         return $this->valueReplacer($message, $attribute);
     }
@@ -695,7 +695,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $parameter
      * @return mixed
      */
-    public function replaceGtin12($message, $attribute, $rule, $parameter)
+    public function replaceGtin12($message, $attribute)
     {
         return $this->valueReplacer($message, $attribute);
     }
@@ -709,7 +709,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $parameter
      * @return mixed
      */
-    public function replaceGtin13($message, $attribute, $rule, $parameter)
+    public function replaceGtin13($message, $attribute)
     {
         return $this->valueReplacer($message, $attribute);
     }
@@ -723,7 +723,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $parameter
      * @return mixed
      */
-    public function replaceGtin14($message, $attribute, $rule, $parameter)
+    public function replaceGtin14($message, $attribute)
     {
         return $this->valueReplacer($message, $attribute);
     }
@@ -737,7 +737,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $parameter
      * @return mixed
      */
-    public function replaceIban($message, $attribute, $rule, $parameter)
+    public function replaceIban($message, $attribute)
     {
         return $this->valueReplacer($message, $attribute);
     }
@@ -751,7 +751,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $parameter
      * @return mixed
      */
-    public function replaceInsee($message, $attribute, $rule, $parameter)
+    public function replaceInsee($message, $attribute)
     {
         return $this->valueReplacer($message, $attribute);
     }
@@ -765,7 +765,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $parameter
      * @return mixed
      */
-    public function replaceIpaddress($message, $attribute, $rule, $parameter)
+    public function replaceIpaddress($message, $attribute)
     {
         return $this->valueReplacer($message, $attribute);
     }
@@ -779,7 +779,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $parameter
      * @return mixed
      */
-    public function replaceIsbn($message, $attribute, $rule, $parameter)
+    public function replaceIsbn($message, $attribute)
     {
         return $this->valueReplacer($message, $attribute);
     }
@@ -793,7 +793,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $parameter
      * @return mixed
      */
-    public function replaceIsin($message, $attribute, $rule, $parameter)
+    public function replaceIsin($message, $attribute)
     {
         return $this->valueReplacer($message, $attribute);
     }
@@ -807,7 +807,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $parameter
      * @return mixed
      */
-    public function replaceIsmn($message, $attribute, $rule, $parameter)
+    public function replaceIsmn($message, $attribute)
     {
         return $this->valueReplacer($message, $attribute);
     }
@@ -821,7 +821,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $parameter
      * @return mixed
      */
-    public function replaceIswc($message, $attribute, $rule, $parameter)
+    public function replaceIswc($message, $attribute)
     {
         return $this->valueReplacer($message, $attribute);
     }
@@ -835,7 +835,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $parameter
      * @return mixed
      */
-    public function replaceMac($message, $attribute, $rule, $parameter)
+    public function replaceMac($message, $attribute)
     {
         return $this->valueReplacer($message, $attribute);
     }
@@ -849,7 +849,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $parameter
      * @return mixed
      */
-    public function replaceNif($message, $attribute, $rule, $parameter)
+    public function replaceNif($message, $attribute)
     {
         return $this->valueReplacer($message, $attribute);
     }
@@ -863,7 +863,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $parameter
      * @return mixed
      */
-    public function replaceOrganismeType12NormeB2($message, $attribute, $rule, $parameter)
+    public function replaceOrganismeType12NormeB2($message, $attribute)
     {
         return $this->valueReplacer($message, $attribute);
     }
@@ -896,7 +896,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $parameter
      * @return mixed
      */
-    public function replaceSedol($message, $attribute, $rule, $parameter)
+    public function replaceSedol($message, $attribute)
     {
         return $this->valueReplacer($message, $attribute);
     }
@@ -910,7 +910,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $parameter
      * @return mixed
      */
-    public function replaceSiren($message, $attribute, $rule, $parameter)
+    public function replaceSiren($message, $attribute)
     {
         return $this->valueReplacer($message, $attribute);
     }
@@ -924,7 +924,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $parameter
      * @return mixed
      */
-    public function replaceSiret($message, $attribute, $rule, $parameter)
+    public function replaceSiret($message, $attribute)
     {
         return $this->valueReplacer($message, $attribute);
     }
@@ -938,7 +938,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $parameter
      * @return mixed
      */
-    public function replaceSscc($message, $attribute, $rule, $parameter)
+    public function replaceSscc($message, $attribute)
     {
         return $this->valueReplacer($message, $attribute);
     }
@@ -952,7 +952,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $parameter
      * @return mixed
      */
-    public function replaceSSn($message, $attribute, $rule, $parameter)
+    public function replaceSSn($message, $attribute)
     {
         return $this->valueReplacer($message, $attribute);
     }
@@ -966,7 +966,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $parameter
      * @return mixed
      */
-    public function replaceStructuredCommunication($message, $attribute, $rule, $parameter)
+    public function replaceStructuredCommunication($message, $attribute)
     {
         return $this->valueReplacer($message, $attribute);
     }
@@ -980,7 +980,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $parameter
      * @return mixed
      */
-    public function replaceSwiftBic($message, $attribute, $rule, $parameter)
+    public function replaceSwiftBic($message, $attribute)
     {
         return $this->valueReplacer($message, $attribute);
     }
@@ -994,7 +994,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $parameter
      * @return mixed
      */
-    public function replaceUdi($message, $attribute, $rule, $parameter)
+    public function replaceUdi($message, $attribute)
     {
         return $this->valueReplacer($message, $attribute);
     }
@@ -1008,7 +1008,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $parameter
      * @return mixed
      */
-    public function replaceUknin($message, $attribute, $rule, $parameter)
+    public function replaceUknin($message, $attribute)
     {
         return $this->valueReplacer($message, $attribute);
     }
@@ -1022,7 +1022,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $parameter
      * @return mixed
      */
-    public function replaceUpca($message, $attribute, $rule, $parameter)
+    public function replaceUpca($message, $attribute)
     {
         return $this->valueReplacer($message, $attribute);
     }
@@ -1036,7 +1036,7 @@ class IsoCodesValidator extends BaseValidator
      * @param $parameter
      * @return mixed
      */
-    public function replaceVat($message, $attribute, $rule, $parameter)
+    public function replaceVat($message, $attribute)
     {
         return $this->valueReplacer($message, $attribute);
     }
