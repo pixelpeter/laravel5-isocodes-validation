@@ -41,7 +41,7 @@ class IsoCodesValidationServiceProvider extends ServiceProvider
     private function getTranslationKeyFromMethodName($name)
     {
         if (stripos($name, 'validate') !== false) {
-            return snake_case(substr($name, 8));
+            return /** @scrutinizer ignore-deprecated */ snake_case(substr($name, 8));
         }
 
     }
