@@ -18,7 +18,9 @@ A simple Laravel 5 wrapper for the [IsoCodes Validation library](https://github.
 composer require pixelpeter/laravel5-isocodes-validation
 ```
 
-### Step 2: Add the Service Provider (not needed with v2.x because of auto discovery)
+### Step 2: Add the Service Provider
+*(not needed starting with v2.x because of auto discovery)*
+
 Add the service provider in `app/config/app.php`
 ```php
 'provider' => [
@@ -44,7 +46,7 @@ $rules = [
 $validator = Validator::make($payload, $rules);
 ```
 
-### Examples with parameter
+### Examples with reference parameter
 Some rules need a reference to be validated against (e.g. `country` for `zipcode`).
 
 Just pass the name of the field holding the reference to the rule.
@@ -71,6 +73,30 @@ $rules = [
 ];
 
 $validator = Validator::make($payload, $rules);
+```
+
+### Example with arrays and dot notation
+*(added in v3.x)*
+
+As suggested by @otr-tomek I've added support for all validation methods using arrays in dot notation as an input.
+
+```php
+$payload = [
+    'data' => [
+        [
+            'country' => 'DE',
+            'zipcode' => 63741
+        ],
+        [
+            'country' => 'AT',
+            'zipcode' => 1180
+        ]
+  ] 
+];
+
+$validator = Validator::make($payload, [
+    'data.*.zipcode' => 'zipcode:data.*.country'
+]);
 ```
 
 ### Validation error messages
