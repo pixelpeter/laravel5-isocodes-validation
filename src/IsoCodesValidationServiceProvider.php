@@ -24,6 +24,7 @@ class IsoCodesValidationServiceProvider extends ServiceProvider
             // set the validation error messages
             foreach (get_class_methods('Pixelpeter\IsoCodesValidation\IsoCodesValidator') as $method) {
                 $key = $this->getTranslationKeyFromMethodName($method);
+
                 $messages[$key] = $this->getErrorMessage($translator, $messages, $key);
             }
 

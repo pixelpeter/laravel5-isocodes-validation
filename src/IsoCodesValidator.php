@@ -241,7 +241,7 @@ class IsoCodesValidator extends BaseValidator
     public function validateIsbn($attribute, $value, $parameters)
     {
         $this->requireParameterCount(1, $parameters, 'isbn');
-        $type = Arr::get($this->data, $parameters[0]);
+        $type = $this->prepareReference($attribute, $parameters);
 
         return $this->runIsoCodesValidator(\IsoCodes\Isbn::class, $value, $type);
     }
@@ -322,7 +322,7 @@ class IsoCodesValidator extends BaseValidator
     public function validateOrganismeType12NormeB2($attribute, $value, $parameters)
     {
         $this->requireParameterCount(1, $parameters, 'organisme_type12_norme_b2');
-        $clef = Arr::get($this->data, $parameters[0]);
+        $clef = $this->prepareReference($attribute, $parameters);
 
         return $this->runIsoCodesValidator(\IsoCodes\OrganismeType12NormeB2::class, $value, $clef);
     }
@@ -338,7 +338,7 @@ class IsoCodesValidator extends BaseValidator
     public function validatePhonenumber($attribute, $value, $parameters)
     {
         $this->requireParameterCount(1, $parameters, 'phonenumber');
-        $country = Arr::get($this->data, $parameters[0]);
+        $country = $this->prepareReference($attribute, $parameters);
 
         return $this->runIsoCodesValidator(\IsoCodes\PhoneNumber::class, $value, $country);
     }
@@ -497,9 +497,25 @@ class IsoCodesValidator extends BaseValidator
     public function validateZipcode($attribute, $value, $parameters)
     {
         $this->requireParameterCount(1, $parameters, 'zipcode');
-        $country = Arr::get($this->data, $parameters[0]);
+        $country = $this->prepareReference($attribute, $parameters);
 
         return $this->runIsoCodesValidator(\IsoCodes\ZipCode::class, $value, $country);
+    }
+
+    /**
+     * Prepare/get the reference when defined in dot notation
+     *
+     * @param $attribute
+     * @param $parameters
+     * @return mixed
+     */
+    protected function prepareReference($attribute, $parameters)
+    {
+        if ($keys = $this->getExplicitKeys($attribute)) {
+            $parameters = $this->replaceAsterisksInParameters($parameters, $keys);
+        }
+
+        return Arr::get($this->data, $parameters[0], $parameters[0]);
     }
 
     /**
@@ -532,9 +548,9 @@ class IsoCodesValidator extends BaseValidator
      * @param $parameter
      * @return mixed
      */
-    protected function countryReplacer($message, $parameter)
+    protected function countryReplacer($message, $reference)
     {
-        return str_replace(':country', Arr::get($this->data, $parameter[0]), $message);
+        return str_replace(':country', $reference, $message);
     }
 
     /**
@@ -896,8 +912,10 @@ class IsoCodesValidator extends BaseValidator
      */
     protected function replacePhonenumber($message, $attribute, $rule, $parameter)
     {
+        $reference = $this->prepareReference($attribute, $parameter);
+
         $message = $this->valueReplacer($message, $attribute);
-        $message = $this->countryReplacer($message, $parameter);
+        $message = $this->countryReplacer($message, $reference);
 
         return $message;
     }
@@ -1067,8 +1085,10 @@ class IsoCodesValidator extends BaseValidator
      */
     public function replaceZipcode($message, $attribute, $rule, $parameter)
     {
+        $reference = $this->prepareReference($attribute, $parameter);
+
         $message = $this->valueReplacer($message, $attribute);
-        $message = $this->countryReplacer($message, $parameter);
+        $message = $this->countryReplacer($message, $reference);
 
         return $message;
     }
