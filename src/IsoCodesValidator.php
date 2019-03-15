@@ -14,10 +14,9 @@ class IsoCodesValidator extends BaseValidator
      *
      * @param $attribute
      * @param $value
-     * @param $parameters
      * @return mixed
      */
-    public function validateBban($attribute, $value, $parameters)
+    public function validateBban($attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Bban::class, $value);
     }
@@ -27,10 +26,9 @@ class IsoCodesValidator extends BaseValidator
      *
      * @param $attribute
      * @param $value
-     * @param $parameters
      * @return mixed
      */
-    public function validateBsn($attribute, $value, $parameters)
+    public function validateBsn($attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Bsn::class, $value);
     }
@@ -40,10 +38,9 @@ class IsoCodesValidator extends BaseValidator
      *
      * @param $attribute
      * @param $value
-     * @param $parameters
      * @return mixed
      */
-    public function validateCif($attribute, $value, $parameters)
+    public function validateCif($attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Cif::class, $value);
     }
@@ -53,10 +50,9 @@ class IsoCodesValidator extends BaseValidator
      *
      * @param $attribute
      * @param $value
-     * @param $parameters
      * @return mixed
      */
-    public function validateCreditcard($attribute, $value, $parameters)
+    public function validateCreditcard($attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\CreditCard::class, $value);
     }
@@ -66,10 +62,9 @@ class IsoCodesValidator extends BaseValidator
      *
      * @param $attribute
      * @param $value
-     * @param $parameters
      * @return mixed
      */
-    public function validateEan8($attribute, $value, $parameters)
+    public function validateEan8($attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Ean8::class, $value);
     }
@@ -79,10 +74,9 @@ class IsoCodesValidator extends BaseValidator
      *
      * @param $attribute
      * @param $value
-     * @param $parameters
      * @return mixed
      */
-    public function validateEan13($attribute, $value, $parameters)
+    public function validateEan13($attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Ean13::class, $value);
     }
@@ -92,10 +86,9 @@ class IsoCodesValidator extends BaseValidator
      *
      * @param $attribute
      * @param $value
-     * @param $parameters
      * @return mixed
      */
-    public function validateGdti($attribute, $value, $parameters)
+    public function validateGdti($attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Gdti::class, $value);
     }
@@ -105,10 +98,9 @@ class IsoCodesValidator extends BaseValidator
      *
      * @param $attribute
      * @param $value
-     * @param $parameters
      * @return mixed
      */
-    public function validateGln($attribute, $value, $parameters)
+    public function validateGln($attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Gln::class, $value);
     }
@@ -118,10 +110,9 @@ class IsoCodesValidator extends BaseValidator
      *
      * @param $attribute
      * @param $value
-     * @param $parameters
      * @return mixed
      */
-    public function validateGrai($attribute, $value, $parameters)
+    public function validateGrai($attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Grai::class, $value);
     }
@@ -131,10 +122,9 @@ class IsoCodesValidator extends BaseValidator
      *
      * @param $attribute
      * @param $value
-     * @param $parameters
      * @return mixed
      */
-    public function validateGsrn($attribute, $value, $parameters)
+    public function validateGsrn($attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Gsrn::class, $value);
     }
@@ -144,10 +134,9 @@ class IsoCodesValidator extends BaseValidator
      *
      * @param $attribute
      * @param $value
-     * @param $parameters
      * @return mixed
      */
-    public function validateGtin8($attribute, $value, $parameters)
+    public function validateGtin8($attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Gtin8::class, $value);
     }
@@ -157,10 +146,9 @@ class IsoCodesValidator extends BaseValidator
      *
      * @param $attribute
      * @param $value
-     * @param $parameters
      * @return mixed
      */
-    public function validateGtin12($attribute, $value, $parameters)
+    public function validateGtin12($attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Gtin12::class, $value);
     }
@@ -170,10 +158,9 @@ class IsoCodesValidator extends BaseValidator
      *
      * @param $attribute
      * @param $value
-     * @param $parameters
      * @return mixed
      */
-    public function validateGtin13($attribute, $value, $parameters)
+    public function validateGtin13($attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Gtin13::class, $value);
     }
@@ -183,10 +170,9 @@ class IsoCodesValidator extends BaseValidator
      *
      * @param $attribute
      * @param $value
-     * @param $parameters
      * @return mixed
      */
-    public function validateGtin14($attribute, $value, $parameters)
+    public function validateGtin14($attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Gtin14::class, $value);
     }
@@ -196,10 +182,9 @@ class IsoCodesValidator extends BaseValidator
      *
      * @param $attribute
      * @param $value
-     * @param $parameters
      * @return mixed
      */
-    public function validateIban($attribute, $value, $parameters)
+    public function validateIban($attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Iban::class, $value);
     }
@@ -209,10 +194,9 @@ class IsoCodesValidator extends BaseValidator
      *
      * @param $attribute
      * @param $value
-     * @param $parameters
      * @return mixed
      */
-    public function validateInsee($attribute, $value, $parameters)
+    public function validateInsee($attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Insee::class, $value);
     }
@@ -222,10 +206,9 @@ class IsoCodesValidator extends BaseValidator
      *
      * @param $attribute
      * @param $value
-     * @param $parameters
      * @return mixed
      */
-    public function validateIpaddress($attribute, $value, $parameters)
+    public function validateIpaddress($attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\IP::class, $value);
     }
@@ -251,10 +234,9 @@ class IsoCodesValidator extends BaseValidator
      *
      * @param $attribute
      * @param $value
-     * @param $parameters
      * @return mixed
      */
-    public function validateIsin($attribute, $value, $parameters)
+    public function validateIsin($attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Isin::class, $value);
     }
@@ -264,10 +246,9 @@ class IsoCodesValidator extends BaseValidator
      *
      * @param $attribute
      * @param $value
-     * @param $parameters
      * @return mixed
      */
-    public function validateIsmn($attribute, $value, $parameters)
+    public function validateIsmn($attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Ismn::class, $value);
     }
@@ -277,10 +258,9 @@ class IsoCodesValidator extends BaseValidator
      *
      * @param $attribute
      * @param $value
-     * @param $parameters
      * @return mixed
      */
-    public function validateIswc($attribute, $value, $parameters)
+    public function validateIswc($attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Iswc::class, $value);
     }
@@ -290,10 +270,9 @@ class IsoCodesValidator extends BaseValidator
      *
      * @param $attribute
      * @param $value
-     * @param $parameters
      * @return mixed
      */
-    public function validateMac($attribute, $value, $parameters)
+    public function validateMac($attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Mac::class, $value);
     }
@@ -303,10 +282,9 @@ class IsoCodesValidator extends BaseValidator
      *
      * @param $attribute
      * @param $value
-     * @param $parameters
      * @return mixed
      */
-    public function validateNif($attribute, $value, $parameters)
+    public function validateNif($attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Nif::class, $value);
     }
@@ -348,10 +326,9 @@ class IsoCodesValidator extends BaseValidator
      *
      * @param $attribute
      * @param $value
-     * @param $parameters
      * @return mixed
      */
-    public function validateSedol($attribute, $value, $parameters)
+    public function validateSedol($attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Sedol::class, $value);
     }
@@ -361,10 +338,9 @@ class IsoCodesValidator extends BaseValidator
      *
      * @param $attribute
      * @param $value
-     * @param $parameters
      * @return mixed
      */
-    public function validateSiren($attribute, $value, $parameters)
+    public function validateSiren($attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Siren::class, $value);
     }
@@ -374,10 +350,9 @@ class IsoCodesValidator extends BaseValidator
      *
      * @param $attribute
      * @param $value
-     * @param $parameters
      * @return mixed
      */
-    public function validateSiret($attribute, $value, $parameters)
+    public function validateSiret($attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Siret::class, $value);
     }
@@ -387,10 +362,9 @@ class IsoCodesValidator extends BaseValidator
      *
      * @param $attribute
      * @param $value
-     * @param $parameters
      * @return mixed
      */
-    public function validateSscc($attribute, $value, $parameters)
+    public function validateSscc($attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Sscc::class, $value);
     }
@@ -400,10 +374,9 @@ class IsoCodesValidator extends BaseValidator
      *
      * @param $attribute
      * @param $value
-     * @param $parameters
      * @return mixed
      */
-    public function validateSsn($attribute, $value, $parameters)
+    public function validateSsn($attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Ssn::class, $value);
     }
@@ -413,10 +386,9 @@ class IsoCodesValidator extends BaseValidator
      *
      * @param $attribute
      * @param $value
-     * @param $parameters
      * @return mixed
      */
-    public function validateStructuredCommunication($attribute, $value, $parameters)
+    public function validateStructuredCommunication($attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\StructuredCommunication::class, $value);
     }
@@ -426,10 +398,9 @@ class IsoCodesValidator extends BaseValidator
      *
      * @param $attribute
      * @param $value
-     * @param $parameters
      * @return mixed
      */
-    public function validateSwiftBic($attribute, $value, $parameters)
+    public function validateSwiftBic($attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\SwiftBic::class, $value);
     }
@@ -439,10 +410,9 @@ class IsoCodesValidator extends BaseValidator
      *
      * @param $attribute
      * @param $value
-     * @param $parameters
      * @return mixed
      */
-    public function validateUdi($attribute, $value, $parameters)
+    public function validateUdi($attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Udi::class, $value);
     }
@@ -452,10 +422,9 @@ class IsoCodesValidator extends BaseValidator
      *
      * @param $attribute
      * @param $value
-     * @param $parameters
      * @return mixed
      */
-    public function validateUknin($attribute, $value, $parameters)
+    public function validateUknin($attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Uknin::class, $value);
     }
@@ -465,10 +434,9 @@ class IsoCodesValidator extends BaseValidator
      *
      * @param $attribute
      * @param $value
-     * @param $parameters
      * @return mixed
      */
-    public function validateUpca($attribute, $value, $parameters)
+    public function validateUpca($attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Upca::class, $value);
     }
@@ -478,10 +446,9 @@ class IsoCodesValidator extends BaseValidator
      *
      * @param $attribute
      * @param $value
-     * @param $parameters
      * @return mixed
      */
-    public function validateVat($attribute, $value, $parameters)
+    public function validateVat($attribute, $value)
     {
         return $this->runIsoCodesValidator(\IsoCodes\Vat::class, $value);
     }
@@ -507,7 +474,7 @@ class IsoCodesValidator extends BaseValidator
      *
      * @param $attribute
      * @param $parameters
-     * @return mixed
+     * @return string
      */
     protected function prepareReference($attribute, $parameters)
     {
