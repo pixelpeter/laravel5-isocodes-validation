@@ -3,6 +3,7 @@
 namespace Pixelpeter\IsoCodesValidation;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Str;
 
 class IsoCodesValidationServiceProvider extends ServiceProvider
 {
@@ -41,7 +42,7 @@ class IsoCodesValidationServiceProvider extends ServiceProvider
     private function getTranslationKeyFromMethodName($name)
     {
         if (stripos($name, 'validate') !== false) {
-            return /** @scrutinizer ignore-deprecated */ snake_case(substr($name, 8));
+            return Str::snake(substr($name, 8));
         }
 
     }
