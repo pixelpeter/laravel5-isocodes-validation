@@ -37,7 +37,7 @@ class IsoCodesValidationServiceProvider extends ServiceProvider
      * Return translation key for correspondent method name
      *
      * @param  string  $name
-     * @return string | boolean
+     * @return string | bool
      */
     private function getTranslationKeyFromMethodName($name)
     {
