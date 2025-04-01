@@ -4,375 +4,375 @@ return [
     // BBAN
     [
         'payload' => [
-            'bban' => 'invalid'
+            'bban' => 'invalid',
         ],
         'rules' => [
-            'bban' => 'bban'
+            'bban' => 'bban',
         ],
-        'message' => 'The value "invalid" of bban is not a valid BBAN code.'
+        'message' => 'The value "invalid" of bban is not a valid BBAN code.',
     ],
     // BSN
     [
         'payload' => [
-            'bsn' => 'invalid'
+            'bsn' => 'invalid',
         ],
         'rules' => [
-            'bsn' => 'bsn'
+            'bsn' => 'bsn',
         ],
-        'message' => 'The value "invalid" of bsn is not a valid BSN.'
+        'message' => 'The value "invalid" of bsn is not a valid BSN.',
     ],
     // CIF
     [
         'payload' => [
-            'cif' => 'invalid'
+            'cif' => 'invalid',
         ],
         'rules' => [
-            'cif' => 'cif'
+            'cif' => 'cif',
         ],
-        'message' => 'The value "invalid" of cif is not a valid CIF code.'
+        'message' => 'The value "invalid" of cif is not a valid CIF code.',
     ],
     // CREDITCARD
     [
         'payload' => [
-            'creditcard' => 'invalid'
+            'creditcard' => 'invalid',
         ],
         'rules' => [
-            'creditcard' => 'creditcard'
+            'creditcard' => 'creditcard',
         ],
-        'message' => 'The value "invalid" of creditcard is not a valid credit card number.'
+        'message' => 'The value "invalid" of creditcard is not a valid credit card number.',
     ],
     // EAN8
     [
         'payload' => [
-            'ean8' => 'invalid'
+            'ean8' => 'invalid',
         ],
         'rules' => [
-            'ean8' => 'ean8'
+            'ean8' => 'ean8',
         ],
-        'message' => 'The value "invalid" of ean8 is not a valid EAN8 code.'
+        'message' => 'The value "invalid" of ean8 is not a valid EAN8 code.',
     ],
     // EAN13
     [
         'payload' => [
-            'ean13' => 'invalid'
+            'ean13' => 'invalid',
         ],
         'rules' => [
-            'ean13' => 'ean13'
+            'ean13' => 'ean13',
         ],
-        'message' => 'The value "invalid" of ean13 is not a valid EAN13 code.'
+        'message' => 'The value "invalid" of ean13 is not a valid EAN13 code.',
     ],
     // GDTI
     [
         'payload' => [
-            'gdti' => 'invalid'
+            'gdti' => 'invalid',
         ],
         'rules' => [
-            'gdti' => 'gdti'
+            'gdti' => 'gdti',
         ],
-        'message' => 'The value "invalid" of gdti is not a valid Global Document Type Identifier (GDTI).'
+        'message' => 'The value "invalid" of gdti is not a valid Global Document Type Identifier (GDTI).',
     ],
     // GLN
     [
         'payload' => [
-            'gln' => 'invalid'
+            'gln' => 'invalid',
         ],
         'rules' => [
-            'gln' => 'gln'
+            'gln' => 'gln',
         ],
-        'message' => 'The value "invalid" of gln is not a valid Global Location Number (GLN).'
+        'message' => 'The value "invalid" of gln is not a valid Global Location Number (GLN).',
     ],
     // GRAI
     [
         'payload' => [
-            'grai' => 'invalid'
+            'grai' => 'invalid',
         ],
         'rules' => [
-            'grai' => 'grai'
+            'grai' => 'grai',
         ],
-        'message' => 'The value "invalid" of grai is not a valid Global Returnable Asset Identifier.'
+        'message' => 'The value "invalid" of grai is not a valid Global Returnable Asset Identifier.',
     ],
     // GSRN
     [
         'payload' => [
-            'gsrn' => 'invalid'
+            'gsrn' => 'invalid',
         ],
         'rules' => [
-            'gsrn' => 'gsrn'
+            'gsrn' => 'gsrn',
         ],
-        'message' => 'The value "invalid" of gsrn is not a valid Global Service Relation Number (GS1).'
+        'message' => 'The value "invalid" of gsrn is not a valid Global Service Relation Number (GS1).',
     ],
     // GTIN8
     [
         'payload' => [
-            'gtin8' => 'invalid'
+            'gtin8' => 'invalid',
         ],
         'rules' => [
-            'gtin8' => 'gtin8'
+            'gtin8' => 'gtin8',
         ],
-        'message' => 'The value "invalid" of gtin8 is not a valid GTIN-8 code.'
+        'message' => 'The value "invalid" of gtin8 is not a valid GTIN-8 code.',
     ],
     // GTIN12
     [
         'payload' => [
-            'gtin12' => 'invalid'
+            'gtin12' => 'invalid',
         ],
         'rules' => [
-            'gtin12' => 'gtin12'
+            'gtin12' => 'gtin12',
         ],
-        'message' => 'The value "invalid" of gtin12 is not a valid GTIN-12 code.'
+        'message' => 'The value "invalid" of gtin12 is not a valid GTIN-12 code.',
     ],
     // GTIN13
     [
         'payload' => [
-            'gtin13' => 'invalid'
+            'gtin13' => 'invalid',
         ],
         'rules' => [
-            'gtin13' => 'gtin13'
+            'gtin13' => 'gtin13',
         ],
-        'message' => 'The value "invalid" of gtin13 is not a valid GTIN-13 code.'
+        'message' => 'The value "invalid" of gtin13 is not a valid GTIN-13 code.',
     ],
     // GTIN14
     [
         'payload' => [
-            'gtin14' => 'invalid'
+            'gtin14' => 'invalid',
         ],
         'rules' => [
-            'gtin14' => 'gtin14'
+            'gtin14' => 'gtin14',
         ],
-        'message' => 'The value "invalid" of gtin14 is not a valid GTIN-14 code.'
+        'message' => 'The value "invalid" of gtin14 is not a valid GTIN-14 code.',
     ],
     // IBAN
     [
         'payload' => [
-            'iban' => 'invalid'
+            'iban' => 'invalid',
         ],
         'rules' => [
-            'iban' => 'iban'
+            'iban' => 'iban',
         ],
-        'message' => 'The value "invalid" of iban is not a valid IBAN.'
+        'message' => 'The value "invalid" of iban is not a valid IBAN.',
     ],
     // INSEE
     [
         'payload' => [
-            'insee' => 'invalid'
+            'insee' => 'invalid',
         ],
         'rules' => [
-            'insee' => 'insee'
+            'insee' => 'insee',
         ],
-        'message' => 'The value "invalid" of insee is not a valid INSEE code.'
+        'message' => 'The value "invalid" of insee is not a valid INSEE code.',
     ],
     // IP
     [
         'payload' => [
-            'ipaddress' => 'invalid'
+            'ipaddress' => 'invalid',
         ],
         'rules' => [
-            'ipaddress' => 'ipaddress'
+            'ipaddress' => 'ipaddress',
         ],
-        'message' => 'The value "invalid" of ipaddress is not a valid ip address.'
+        'message' => 'The value "invalid" of ipaddress is not a valid ip address.',
     ],
     // ISBN
     [
         'payload' => [
             'isbn' => 'invalid',
-            'type' => 13
+            'type' => 13,
         ],
         'rules' => [
-            'isbn' => 'isbn:type'
+            'isbn' => 'isbn:type',
         ],
-        'message' => 'The value "invalid" of isbn is not a valid ISBN.'
+        'message' => 'The value "invalid" of isbn is not a valid ISBN.',
     ],
     // ISIN
     [
         'payload' => [
-            'isin' => 'invalid'
+            'isin' => 'invalid',
         ],
         'rules' => [
-            'isin' => 'isin'
+            'isin' => 'isin',
         ],
-        'message' => 'The value "invalid" of isin is not a valid ISIN.'
+        'message' => 'The value "invalid" of isin is not a valid ISIN.',
     ],
     // ISMN
     [
         'payload' => [
-            'ismn' => 'invalid'
+            'ismn' => 'invalid',
         ],
         'rules' => [
-            'ismn' => 'ismn'
+            'ismn' => 'ismn',
         ],
         'message' => 'The value "invalid" of ismn is not a valid International Standard Music Number or ISMN (ISO 10957)',
     ],
     // ISWC
     [
         'payload' => [
-            'iswc' => 'invalid'
+            'iswc' => 'invalid',
         ],
         'rules' => [
-            'iswc' => 'iswc'
+            'iswc' => 'iswc',
         ],
-        'message' => 'The value "invalid" of iswc is not a valid International Standard Musical Work Code (ISWC)'
+        'message' => 'The value "invalid" of iswc is not a valid International Standard Musical Work Code (ISWC)',
     ],
     // MAC
     [
         'payload' => [
-            'mac' => 'invalid'
+            'mac' => 'invalid',
         ],
         'rules' => [
-            'mac' => 'mac'
+            'mac' => 'mac',
         ],
-        'message' => 'The value "invalid" of mac is not a valid MAC address.'
+        'message' => 'The value "invalid" of mac is not a valid MAC address.',
     ],
     // NIF
     [
         'payload' => [
-            'nif' => 'invalid'
+            'nif' => 'invalid',
         ],
         'rules' => [
-            'nif' => 'nif'
+            'nif' => 'nif',
         ],
-        'message' => 'The value "invalid" of nif is not a valid NIF.'
+        'message' => 'The value "invalid" of nif is not a valid NIF.',
     ],
     // ORGANISME_TYPE12_NORME_B2
     [
         'payload' => [
             'organisme_type12_norme_b2' => 'invalid',
-            'clef' => 2
+            'clef' => 2,
         ],
         'rules' => [
-            'organisme_type12_norme_b2' => 'organisme_type12_norme_b2:clef'
+            'organisme_type12_norme_b2' => 'organisme_type12_norme_b2:clef',
         ],
-        'message' => 'The value "invalid" of organisme type12 norme b2 is not a valid Organisme Type12 Norme B2.'
+        'message' => 'The value "invalid" of organisme type12 norme b2 is not a valid Organisme Type12 Norme B2.',
     ],
     // PHONE NUMBER
     [
         'payload' => [
             'country' => 'GB',
-            'phonenumber' => 'invalid'
+            'phonenumber' => 'invalid',
         ],
         'rules' => [
-            'phonenumber' => 'phonenumber:country'
+            'phonenumber' => 'phonenumber:country',
         ],
-        'message' => 'The value "invalid" of phonenumber is not valid for "GB".'
+        'message' => 'The value "invalid" of phonenumber is not valid for "GB".',
     ],
     // SEDOL
     [
         'payload' => [
-            'sedol' => 'invalid'
+            'sedol' => 'invalid',
         ],
         'rules' => [
-            'sedol' => 'sedol'
+            'sedol' => 'sedol',
         ],
-        'message' => 'The value "invalid" of sedol is not a valid SEDOL.'
+        'message' => 'The value "invalid" of sedol is not a valid SEDOL.',
     ],
     // SIREN
     [
         'payload' => [
-            'siren' => 'invalid'
+            'siren' => 'invalid',
         ],
         'rules' => [
-            'siren' => 'siren'
+            'siren' => 'siren',
         ],
-        'message' => 'The value "invalid" of siren is not a valid SIREN code.'
+        'message' => 'The value "invalid" of siren is not a valid SIREN code.',
     ],
     // SIRET
     [
         'payload' => [
-            'siret' => 'invalid'
+            'siret' => 'invalid',
         ],
         'rules' => [
-            'siret' => 'siret'
+            'siret' => 'siret',
         ],
-        'message' => 'The value "invalid" of siret is not a valid SIRET code.'
+        'message' => 'The value "invalid" of siret is not a valid SIRET code.',
     ],
     // SSCC
     [
         'payload' => [
-            'sscc' => 'invalid'
+            'sscc' => 'invalid',
         ],
         'rules' => [
-            'sscc' => 'sscc'
+            'sscc' => 'sscc',
         ],
-        'message' => 'The value "invalid" of sscc is not a valid SSCC.'
+        'message' => 'The value "invalid" of sscc is not a valid SSCC.',
     ],
     // SSN
     [
         'payload' => [
-            'ssn' => 'invalid'
+            'ssn' => 'invalid',
         ],
         'rules' => [
-            'ssn' => 'ssn'
+            'ssn' => 'ssn',
         ],
-        'message' => 'The value "invalid" of ssn is not a valid SSN.'
+        'message' => 'The value "invalid" of ssn is not a valid SSN.',
     ],
     // STRUCTURED_COMMUNICATION
     [
         'payload' => [
-            'structured_communication' => 'invalid'
+            'structured_communication' => 'invalid',
         ],
         'rules' => [
-            'structured_communication' => 'structured_communication'
+            'structured_communication' => 'structured_communication',
         ],
-        'message' => 'The value "invalid" of structured communication is not a valid structured communication code.'
+        'message' => 'The value "invalid" of structured communication is not a valid structured communication code.',
     ],
     // SWIFT_BIC
     [
         'payload' => [
-            'swift_bic' => 'invalid'
+            'swift_bic' => 'invalid',
         ],
         'rules' => [
-            'swift_bic' => 'swift_bic'
+            'swift_bic' => 'swift_bic',
         ],
-        'message' => 'The value "invalid" of swift bic is not a valid SWIFT/BIC.'
+        'message' => 'The value "invalid" of swift bic is not a valid SWIFT/BIC.',
     ],
     // UDI
     [
         'payload' => [
-            'udi' => 'invalid'
+            'udi' => 'invalid',
         ],
         'rules' => [
-            'udi' => 'udi'
+            'udi' => 'udi',
         ],
-        'message' => 'The value "invalid" of udi is not a valid UDI.'
+        'message' => 'The value "invalid" of udi is not a valid UDI.',
     ],
     // UKNIN
     [
         'payload' => [
-            'uknin' => 'invalid'
+            'uknin' => 'invalid',
         ],
         'rules' => [
-            'uknin' => 'uknin'
+            'uknin' => 'uknin',
         ],
-        'message' => 'The value "invalid" of uknin is not a valid UK National Insurance Number.'
+        'message' => 'The value "invalid" of uknin is not a valid UK National Insurance Number.',
     ],
     // UPCA
     [
         'payload' => [
-            'upca' => 'invalid'
+            'upca' => 'invalid',
         ],
         'rules' => [
-            'upca' => 'upca'
+            'upca' => 'upca',
         ],
-        'message' => 'The value "invalid" of upca is not a valid UPCA.'
+        'message' => 'The value "invalid" of upca is not a valid UPCA.',
     ],
     // VAT
     [
         'payload' => [
-            'vat' => 'invalid'
+            'vat' => 'invalid',
         ],
         'rules' => [
-            'vat' => 'vat'
+            'vat' => 'vat',
         ],
-        'message' => 'The value "invalid" of vat is not a valid VAT.'
+        'message' => 'The value "invalid" of vat is not a valid VAT.',
     ],
     // ZIPCODE
     [
         'payload' => [
             'country' => 'GB',
-            'zipcode' => 63741
+            'zipcode' => 63741,
         ],
         'rules' => [
-            'zipcode' => 'zipcode:country'
+            'zipcode' => 'zipcode:country',
         ],
-        'message' => 'The value "63741" of zipcode is not valid for "GB".'
+        'message' => 'The value "63741" of zipcode is not valid for "GB".',
     ],
 ];

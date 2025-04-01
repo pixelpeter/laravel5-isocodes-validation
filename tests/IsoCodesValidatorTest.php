@@ -6,12 +6,12 @@ use Validator;
 
 class IsoCodesValidatorTest extends TestCase
 {
-
     /**
      * Test the correct error messages ist returned
      * with all pace holder replaced
      *
      * @test
+     *
      * @dataProvider invalidDataProvider
      */
     public function validator_returns_correct_error_message($payload, $rules, $expected)
@@ -25,9 +25,11 @@ class IsoCodesValidatorTest extends TestCase
      * Test each validator returns true for valid data
      *
      * @test
+     *
      * @dataProvider validDataProvider
-     * @param $payload
-     * @param $rules
+     *
+     * @param  $payload
+     * @param  $rules
      */
     public function it_validates_correctly($field, $value)
     {
@@ -40,19 +42,21 @@ class IsoCodesValidatorTest extends TestCase
      * Test each validator with a reference value returns true for valid data
      *
      * @test
+     *
      * @dataProvider validDataWithReferencesProvider
-     * @param $payload
-     * @param $rules
+     *
+     * @param  $payload
+     * @param  $rules
      */
-    public function it_validates_correctly_with_references($field, $value, $referenceField='', $referenceValue='')
+    public function it_validates_correctly_with_references($field, $value, $referenceField = '', $referenceValue = '')
     {
         $payload = [
             $field => $value,
-            $referenceField => $referenceValue
+            $referenceField => $referenceValue,
         ];
 
         $rules = [
-            $field => "{$field}:{$referenceField}"
+            $field => "{$field}:{$referenceField}",
         ];
 
         $validator = Validator::make($payload, $rules);
@@ -67,7 +71,7 @@ class IsoCodesValidatorTest extends TestCase
      */
     public function validDataProvider()
     {
-        return include_once(__DIR__.'/fixtures/valid.php');
+        return include_once __DIR__.'/fixtures/valid.php';
     }
 
     /**
@@ -77,7 +81,7 @@ class IsoCodesValidatorTest extends TestCase
      */
     public function invalidDataProvider()
     {
-        return include_once(__DIR__.'/fixtures/invalid.php');
+        return include_once __DIR__.'/fixtures/invalid.php';
     }
 
     /**
@@ -87,7 +91,7 @@ class IsoCodesValidatorTest extends TestCase
      */
     public function validDataWithReferencesProvider()
     {
-        return include_once(__DIR__.'/fixtures/valid_with_references.php');
+        return include_once __DIR__.'/fixtures/valid_with_references.php';
     }
 
     /**
@@ -97,7 +101,7 @@ class IsoCodesValidatorTest extends TestCase
      */
     public function validDataWithDotNotationProvider()
     {
-        return include_once(__DIR__.'/fixtures/valid_wit_dot_notation.php');
+        return include_once __DIR__.'/fixtures/valid_wit_dot_notation.php';
     }
 
     /**
@@ -107,7 +111,7 @@ class IsoCodesValidatorTest extends TestCase
      */
     public function invalidDataWithDotNotationProvider()
     {
-        return include_once(__DIR__.'/fixtures/invalid_wit_dot_notation.php');
+        return include_once __DIR__.'/fixtures/invalid_wit_dot_notation.php';
     }
 
     /**
@@ -115,12 +119,13 @@ class IsoCodesValidatorTest extends TestCase
      * and returns true for valid data
      *
      * @test
+     *
      * @dataProvider validDataWithDotNotationProvider
      */
     public function it_validates_correctly_with_dot_notation($data, $rule)
     {
         $payload = [
-            'data' => $data
+            'data' => $data,
         ];
 
         $validator = Validator::make($payload, $rule);
@@ -134,12 +139,13 @@ class IsoCodesValidatorTest extends TestCase
      * on arrays with dot notation
      *
      * @test
+     *
      * @dataProvider invalidDataWithDotNotationProvider
      */
     public function validator_returns_correct_error_message_with_dot_notation($data, $rule, $error_message)
     {
         $payload = [
-            'data' => $data
+            'data' => $data,
         ];
 
         $validator = Validator::make($payload, $rule);

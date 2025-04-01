@@ -2,7 +2,6 @@
 
 namespace Pixelpeter\IsoCodesValidation;
 
-
 use Exception;
 use Illuminate\Support\Arr;
 use Illuminate\Validation\Validator as BaseValidator;
@@ -12,8 +11,6 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Validate a BBAN code
      *
-     * @param $attribute
-     * @param $value
      * @return mixed
      */
     public function validateBban(/** @scrutinizer ignore-unused */ $attribute, $value)
@@ -24,8 +21,6 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Validate a BSN (Dutch citizen service number)
      *
-     * @param $attribute
-     * @param $value
      * @return mixed
      */
     public function validateBsn(/** @scrutinizer ignore-unused */ $attribute, $value)
@@ -36,8 +31,6 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Validate a CIF code
      *
-     * @param $attribute
-     * @param $value
      * @return mixed
      */
     public function validateCif(/** @scrutinizer ignore-unused */ $attribute, $value)
@@ -48,8 +41,6 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Validate a credit card number
      *
-     * @param $attribute
-     * @param $value
      * @return mixed
      */
     public function validateCreditcard(/** @scrutinizer ignore-unused */ $attribute, $value)
@@ -60,8 +51,6 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Validate a EAN-8 code
      *
-     * @param $attribute
-     * @param $value
      * @return mixed
      */
     public function validateEan8(/** @scrutinizer ignore-unused */ $attribute, $value)
@@ -72,8 +61,6 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Validate a EAN-13 code
      *
-     * @param $attribute
-     * @param $value
      * @return mixed
      */
     public function validateEan13(/** @scrutinizer ignore-unused */ $attribute, $value)
@@ -84,8 +71,6 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Validate a Global Document Type Identifier (GDTI)
      *
-     * @param $attribute
-     * @param $value
      * @return mixed
      */
     public function validateGdti(/** @scrutinizer ignore-unused */ $attribute, $value)
@@ -96,8 +81,6 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Validate a Global Location Number (GLN)
      *
-     * @param $attribute
-     * @param $value
      * @return mixed
      */
     public function validateGln(/** @scrutinizer ignore-unused */ $attribute, $value)
@@ -108,8 +91,6 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Validate a Global Returnable Asset Identifier
      *
-     * @param $attribute
-     * @param $value
      * @return mixed
      */
     public function validateGrai(/** @scrutinizer ignore-unused */ $attribute, $value)
@@ -120,8 +101,6 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Validate a Global Service Relation Number (GS1)
      *
-     * @param $attribute
-     * @param $value
      * @return mixed
      */
     public function validateGsrn(/** @scrutinizer ignore-unused */ $attribute, $value)
@@ -132,8 +111,6 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Validate a GTIN-8 code
      *
-     * @param $attribute
-     * @param $value
      * @return mixed
      */
     public function validateGtin8(/** @scrutinizer ignore-unused */ $attribute, $value)
@@ -144,8 +121,6 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Validate a GTIN-12 code
      *
-     * @param $attribute
-     * @param $value
      * @return mixed
      */
     public function validateGtin12(/** @scrutinizer ignore-unused */ $attribute, $value)
@@ -156,8 +131,6 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Validate a GTIN-13 code
      *
-     * @param $attribute
-     * @param $value
      * @return mixed
      */
     public function validateGtin13(/** @scrutinizer ignore-unused */ $attribute, $value)
@@ -168,8 +141,6 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Validate a GTIN-14 code
      *
-     * @param $attribute
-     * @param $value
      * @return mixed
      */
     public function validateGtin14(/** @scrutinizer ignore-unused */ $attribute, $value)
@@ -180,8 +151,6 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Validate an IBAN
      *
-     * @param $attribute
-     * @param $value
      * @return mixed
      */
     public function validateIban(/** @scrutinizer ignore-unused */ $attribute, $value)
@@ -192,8 +161,6 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Validate a "numéro de sécurité sociale" (INSEE)
      *
-     * @param $attribute
-     * @param $value
      * @return mixed
      */
     public function validateInsee(/** @scrutinizer ignore-unused */ $attribute, $value)
@@ -204,8 +171,6 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Validate an IP address
      *
-     * @param $attribute
-     * @param $value
      * @return mixed
      */
     public function validateIpaddress(/** @scrutinizer ignore-unused */ $attribute, $value)
@@ -216,9 +181,6 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Validate an ISBN
      *
-     * @param $attribute
-     * @param $value
-     * @param $parameters
      * @return mixed
      */
     public function validateIsbn($attribute, $value, $parameters)
@@ -232,8 +194,6 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Validate an "International Securities Identification Number" (ISIN)
      *
-     * @param $attribute
-     * @param $value
      * @return mixed
      */
     public function validateIsin(/** @scrutinizer ignore-unused */ $attribute, $value)
@@ -244,8 +204,6 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Validate an "International Standard Music Number" or ISMN (ISO 10957)
      *
-     * @param $attribute
-     * @param $value
      * @return mixed
      */
     public function validateIsmn(/** @scrutinizer ignore-unused */ $attribute, $value)
@@ -256,8 +214,6 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Validate an "International Standard Musical Work Code" (ISWC)
      *
-     * @param $attribute
-     * @param $value
      * @return mixed
      */
     public function validateIswc(/** @scrutinizer ignore-unused */ $attribute, $value)
@@ -268,8 +224,6 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Validate a MAC address
      *
-     * @param $attribute
-     * @param $value
      * @return mixed
      */
     public function validateMac(/** @scrutinizer ignore-unused */ $attribute, $value)
@@ -280,8 +234,6 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Validate a "Número de Identificación Fiscal" (NIF)
      *
-     * @param $attribute
-     * @param $value
      * @return mixed
      */
     public function validateNif(/** @scrutinizer ignore-unused */ $attribute, $value)
@@ -292,9 +244,6 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Validate a "Organisme Type12 Norme B2"
      *
-     * @param $attribute
-     * @param $value
-     * @param $parameters
      * @return mixed
      */
     public function validateOrganismeType12NormeB2($attribute, $value, $parameters)
@@ -308,9 +257,6 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Validate a phone number
      *
-     * @param $attribute
-     * @param $value
-     * @param $parameters
      * @return mixed
      */
     public function validatePhonenumber($attribute, $value, $parameters)
@@ -324,8 +270,6 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Validate a Stock Exchange Daily Official List (SEDOL)
      *
-     * @param $attribute
-     * @param $value
      * @return mixed
      */
     public function validateSedol(/** @scrutinizer ignore-unused */ $attribute, $value)
@@ -336,8 +280,6 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Validate "Système d’Identification du Répertoire des Entreprises" (SIREN)
      *
-     * @param $attribute
-     * @param $value
      * @return mixed
      */
     public function validateSiren(/** @scrutinizer ignore-unused */ $attribute, $value)
@@ -348,8 +290,6 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Validate "Système d’Identification du Répertoire des ETablissements" (SIRET)
      *
-     * @param $attribute
-     * @param $value
      * @return mixed
      */
     public function validateSiret(/** @scrutinizer ignore-unused */ $attribute, $value)
@@ -360,8 +300,6 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Validate a European/International Article Number (SSCC)
      *
-     * @param $attribute
-     * @param $value
      * @return mixed
      */
     public function validateSscc(/** @scrutinizer ignore-unused */ $attribute, $value)
@@ -372,8 +310,6 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Validate a Social Security Number (SSN)
      *
-     * @param $attribute
-     * @param $value
      * @return mixed
      */
     public function validateSsn(/** @scrutinizer ignore-unused */ $attribute, $value)
@@ -384,8 +320,6 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Validate structured communication
      *
-     * @param $attribute
-     * @param $value
      * @return mixed
      */
     public function validateStructuredCommunication(/** @scrutinizer ignore-unused */ $attribute, $value)
@@ -396,8 +330,6 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Validate a SWIFT/BIC
      *
-     * @param $attribute
-     * @param $value
      * @return mixed
      */
     public function validateSwiftBic(/** @scrutinizer ignore-unused */ $attribute, $value)
@@ -408,8 +340,6 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Validate a Unique Device Identification
      *
-     * @param $attribute
-     * @param $value
      * @return mixed
      */
     public function validateUdi(/** @scrutinizer ignore-unused */ $attribute, $value)
@@ -420,8 +350,6 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Validate a UK National Insurance Number
      *
-     * @param $attribute
-     * @param $value
      * @return mixed
      */
     public function validateUknin(/** @scrutinizer ignore-unused */ $attribute, $value)
@@ -432,8 +360,6 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Validate a Universal Product Code
      *
-     * @param $attribute
-     * @param $value
      * @return mixed
      */
     public function validateUpca(/** @scrutinizer ignore-unused */ $attribute, $value)
@@ -444,8 +370,6 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Validate Value Added Tax (VAT)
      *
-     * @param $attribute
-     * @param $value
      * @return mixed
      */
     public function validateVat(/** @scrutinizer ignore-unused */ $attribute, $value)
@@ -456,9 +380,6 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Validate a zip code
      *
-     * @param $attribute
-     * @param $value
-     * @param $parameters
      * @return mixed
      */
     public function validateZipcode($attribute, $value, $parameters)
@@ -472,8 +393,6 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Prepare/get the reference when defined in dot notation
      *
-     * @param $attribute
-     * @param $parameters
      * @return mixed
      */
     protected function prepareReference($attribute, $parameters)
@@ -490,19 +409,17 @@ class IsoCodesValidator extends BaseValidator
      * and catch every other Exception from underlying libraries
      * so we will only display the Laravel validation error
      *
-     * @param $validator
-     * @param $value
-     * @param mixed $reference
+     * @param  mixed  $reference
      * @return mixed
      */
     protected function runIsoCodesValidator($validator, $value, $reference = '')
     {
         try {
             if (empty($reference)) {
-                return call_user_func($validator . '::validate', $value);
+                return call_user_func($validator.'::validate', $value);
             }
 
-            return call_user_func($validator . '::validate', $value, $reference);
+            return call_user_func($validator.'::validate', $value, $reference);
         } catch (Exception $e) {
             // do nothing
         }
@@ -511,8 +428,7 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Replace all country place-holders
      *
-     * @param $message
-     * @param $parameter
+     * @param  $parameter
      * @return mixed
      */
     protected function countryReplacer($message, $reference)
@@ -523,8 +439,6 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Replace all value place-holders
      *
-     * @param $message
-     * @param $attribute
      * @return mixed
      */
     protected function valueReplacer($message, $attribute)
@@ -535,10 +449,8 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Replace all place-holders for the bban rule
      *
-     * @param $message
-     * @param $attribute
-     * @param $rule
-     * @param $parameter
+     * @param  $rule
+     * @param  $parameter
      * @return mixed
      */
     public function replaceBban($message, $attribute)
@@ -549,10 +461,8 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Replace all place-holders for the bsn rule
      *
-     * @param $message
-     * @param $attribute
-     * @param $rule
-     * @param $parameter
+     * @param  $rule
+     * @param  $parameter
      * @return mixed
      */
     public function replaceBsn($message, $attribute)
@@ -563,10 +473,8 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Replace all place-holders for the cif rule
      *
-     * @param $message
-     * @param $attribute
-     * @param $rule
-     * @param $parameter
+     * @param  $rule
+     * @param  $parameter
      * @return mixed
      */
     public function replaceCif($message, $attribute)
@@ -577,10 +485,8 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Replace all place-holders for the creditcard rule
      *
-     * @param $message
-     * @param $attribute
-     * @param $rule
-     * @param $parameter
+     * @param  $rule
+     * @param  $parameter
      * @return mixed
      */
     public function replaceCreditcard($message, $attribute)
@@ -591,10 +497,8 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Replace all place-holders for the ena8 rule
      *
-     * @param $message
-     * @param $attribute
-     * @param $rule
-     * @param $parameter
+     * @param  $rule
+     * @param  $parameter
      * @return mixed
      */
     public function replaceEan8($message, $attribute)
@@ -605,10 +509,8 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Replace all place-holders for the ean13 rule
      *
-     * @param $message
-     * @param $attribute
-     * @param $rule
-     * @param $parameter
+     * @param  $rule
+     * @param  $parameter
      * @return mixed
      */
     public function replaceEan13($message, $attribute)
@@ -619,10 +521,8 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Replace all place-holders for the gdti rule
      *
-     * @param $message
-     * @param $attribute
-     * @param $rule
-     * @param $parameter
+     * @param  $rule
+     * @param  $parameter
      * @return mixed
      */
     public function replaceGdti($message, $attribute)
@@ -633,10 +533,8 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Replace all place-holders for the gln rule
      *
-     * @param $message
-     * @param $attribute
-     * @param $rule
-     * @param $parameter
+     * @param  $rule
+     * @param  $parameter
      * @return mixed
      */
     public function replaceGln($message, $attribute)
@@ -647,10 +545,8 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Replace all place-holders for the grai rule
      *
-     * @param $message
-     * @param $attribute
-     * @param $rule
-     * @param $parameter
+     * @param  $rule
+     * @param  $parameter
      * @return mixed
      */
     public function replaceGrai($message, $attribute)
@@ -661,10 +557,8 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Replace all place-holders for the gsrn rule
      *
-     * @param $message
-     * @param $attribute
-     * @param $rule
-     * @param $parameter
+     * @param  $rule
+     * @param  $parameter
      * @return mixed
      */
     public function replaceGsrn($message, $attribute)
@@ -675,10 +569,8 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Replace all place-holders for the gitin8 rule
      *
-     * @param $message
-     * @param $attribute
-     * @param $rule
-     * @param $parameter
+     * @param  $rule
+     * @param  $parameter
      * @return mixed
      */
     public function replaceGtin8($message, $attribute)
@@ -689,10 +581,8 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Replace all place-holders for the gtin12 rule
      *
-     * @param $message
-     * @param $attribute
-     * @param $rule
-     * @param $parameter
+     * @param  $rule
+     * @param  $parameter
      * @return mixed
      */
     public function replaceGtin12($message, $attribute)
@@ -703,10 +593,8 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Replace all place-holders for the gtin13 rule
      *
-     * @param $message
-     * @param $attribute
-     * @param $rule
-     * @param $parameter
+     * @param  $rule
+     * @param  $parameter
      * @return mixed
      */
     public function replaceGtin13($message, $attribute)
@@ -717,10 +605,8 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Replace all place-holders for the gtin14 rule
      *
-     * @param $message
-     * @param $attribute
-     * @param $rule
-     * @param $parameter
+     * @param  $rule
+     * @param  $parameter
      * @return mixed
      */
     public function replaceGtin14($message, $attribute)
@@ -731,10 +617,8 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Replace all place-holders for the iban rule
      *
-     * @param $message
-     * @param $attribute
-     * @param $rule
-     * @param $parameter
+     * @param  $rule
+     * @param  $parameter
      * @return mixed
      */
     public function replaceIban($message, $attribute)
@@ -745,10 +629,8 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Replace all place-holders for the insee rule
      *
-     * @param $message
-     * @param $attribute
-     * @param $rule
-     * @param $parameter
+     * @param  $rule
+     * @param  $parameter
      * @return mixed
      */
     public function replaceInsee($message, $attribute)
@@ -759,10 +641,8 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Replace all place-holders for the ipaddress rule
      *
-     * @param $message
-     * @param $attribute
-     * @param $rule
-     * @param $parameter
+     * @param  $rule
+     * @param  $parameter
      * @return mixed
      */
     public function replaceIpaddress($message, $attribute)
@@ -773,10 +653,8 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Replace all place-holders for the isbn rule
      *
-     * @param $message
-     * @param $attribute
-     * @param $rule
-     * @param $parameter
+     * @param  $rule
+     * @param  $parameter
      * @return mixed
      */
     public function replaceIsbn($message, $attribute)
@@ -787,10 +665,8 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Replace all place-holders for the isin rule
      *
-     * @param $message
-     * @param $attribute
-     * @param $rule
-     * @param $parameter
+     * @param  $rule
+     * @param  $parameter
      * @return mixed
      */
     public function replaceIsin($message, $attribute)
@@ -801,10 +677,8 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Replace all place-holders for the ismn rule
      *
-     * @param $message
-     * @param $attribute
-     * @param $rule
-     * @param $parameter
+     * @param  $rule
+     * @param  $parameter
      * @return mixed
      */
     public function replaceIsmn($message, $attribute)
@@ -815,10 +689,8 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Replace all place-holders for the iswc rule
      *
-     * @param $message
-     * @param $attribute
-     * @param $rule
-     * @param $parameter
+     * @param  $rule
+     * @param  $parameter
      * @return mixed
      */
     public function replaceIswc($message, $attribute)
@@ -829,10 +701,8 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Replace all place-holders for the mac rule
      *
-     * @param $message
-     * @param $attribute
-     * @param $rule
-     * @param $parameter
+     * @param  $rule
+     * @param  $parameter
      * @return mixed
      */
     public function replaceMac($message, $attribute)
@@ -843,10 +713,8 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Replace all place-holders for the nif rule
      *
-     * @param $message
-     * @param $attribute
-     * @param $rule
-     * @param $parameter
+     * @param  $rule
+     * @param  $parameter
      * @return mixed
      */
     public function replaceNif($message, $attribute)
@@ -857,10 +725,8 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Replace all place-holders for the organisme_type12_norme_b2 rule
      *
-     * @param $message
-     * @param $attribute
-     * @param $rule
-     * @param $parameter
+     * @param  $rule
+     * @param  $parameter
      * @return mixed
      */
     public function replaceOrganismeType12NormeB2($message, $attribute)
@@ -871,10 +737,6 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Replace all place-holders for the phonenumber rule
      *
-     * @param $message
-     * @param $attribute
-     * @param $rule
-     * @param $parameter
      * @return mixed
      */
     protected function replacePhonenumber($message, $attribute, /** @scrutinizer ignore-unused */ $rule, $parameter)
@@ -890,10 +752,8 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Replace all place-holders for the sedol rule
      *
-     * @param $message
-     * @param $attribute
-     * @param $rule
-     * @param $parameter
+     * @param  $rule
+     * @param  $parameter
      * @return mixed
      */
     public function replaceSedol($message, $attribute)
@@ -904,10 +764,8 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Replace all place-holders for the siren rule
      *
-     * @param $message
-     * @param $attribute
-     * @param $rule
-     * @param $parameter
+     * @param  $rule
+     * @param  $parameter
      * @return mixed
      */
     public function replaceSiren($message, $attribute)
@@ -918,10 +776,8 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Replace all place-holders for the siret rule
      *
-     * @param $message
-     * @param $attribute
-     * @param $rule
-     * @param $parameter
+     * @param  $rule
+     * @param  $parameter
      * @return mixed
      */
     public function replaceSiret($message, $attribute)
@@ -932,10 +788,8 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Replace all place-holders for the sscc rule
      *
-     * @param $message
-     * @param $attribute
-     * @param $rule
-     * @param $parameter
+     * @param  $rule
+     * @param  $parameter
      * @return mixed
      */
     public function replaceSscc($message, $attribute)
@@ -946,10 +800,8 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Replace all place-holders for the ssn rule
      *
-     * @param $message
-     * @param $attribute
-     * @param $rule
-     * @param $parameter
+     * @param  $rule
+     * @param  $parameter
      * @return mixed
      */
     public function replaceSSn($message, $attribute)
@@ -960,10 +812,8 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Replace all place-holders for the structured_communication rule
      *
-     * @param $message
-     * @param $attribute
-     * @param $rule
-     * @param $parameter
+     * @param  $rule
+     * @param  $parameter
      * @return mixed
      */
     public function replaceStructuredCommunication($message, $attribute)
@@ -974,10 +824,8 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Replace all place-holders for the swift_bic rule
      *
-     * @param $message
-     * @param $attribute
-     * @param $rule
-     * @param $parameter
+     * @param  $rule
+     * @param  $parameter
      * @return mixed
      */
     public function replaceSwiftBic($message, $attribute)
@@ -988,10 +836,8 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Replace all place-holders for the udi rule
      *
-     * @param $message
-     * @param $attribute
-     * @param $rule
-     * @param $parameter
+     * @param  $rule
+     * @param  $parameter
      * @return mixed
      */
     public function replaceUdi($message, $attribute)
@@ -1002,10 +848,8 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Replace all place-holders for the uknin rule
      *
-     * @param $message
-     * @param $attribute
-     * @param $rule
-     * @param $parameter
+     * @param  $rule
+     * @param  $parameter
      * @return mixed
      */
     public function replaceUknin($message, $attribute)
@@ -1016,10 +860,8 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Replace all place-holders for the upca rule
      *
-     * @param $message
-     * @param $attribute
-     * @param $rule
-     * @param $parameter
+     * @param  $rule
+     * @param  $parameter
      * @return mixed
      */
     public function replaceUpca($message, $attribute)
@@ -1030,10 +872,8 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Replace all place-holders for the vat rule
      *
-     * @param $message
-     * @param $attribute
-     * @param $rule
-     * @param $parameter
+     * @param  $rule
+     * @param  $parameter
      * @return mixed
      */
     public function replaceVat($message, $attribute)
@@ -1044,10 +884,6 @@ class IsoCodesValidator extends BaseValidator
     /**
      * Replace all place-holders for the zipcode rule
      *
-     * @param $message
-     * @param $attribute
-     * @param $rule
-     * @param $parameter
      * @return mixed
      */
     public function replaceZipcode($message, $attribute, /** @scrutinizer ignore-unused */ $rule, $parameter)
