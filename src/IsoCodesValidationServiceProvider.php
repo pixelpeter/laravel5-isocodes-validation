@@ -41,7 +41,7 @@ class IsoCodesValidationServiceProvider extends ServiceProvider
      */
     private function getTranslationKeyFromMethodName($name)
     {
-        if (stripos($name, 'validate') === false) {
+        if (stripos($name, 'validate') == true) {
             return false;
         }
 
