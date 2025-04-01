@@ -37,13 +37,20 @@
   "require-dev": {
     "phpunit/phpunit": "^8.3",
     "mockery/mockery": "^1.2",
-    "laravel/laravel": "5.8.*|6.*|7.*"
+    "laravel/laravel": "5.8.*|6.*|7.*",
+    "phpstan/phpstan": "^1.12",
+    "phpstan/extension-installer": "^1.4"
   },
   "extra": {
     "laravel": {
       "providers": [
         "Pixelpeter\\IsoCodesValidation\\IsoCodesValidationServiceProvider"
       ]
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "phpstan/extension-installer": true
     }
   }
 }
