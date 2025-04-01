@@ -1,12 +1,13 @@
 # Laravel 5 IsoCodes Validation
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/pixelpeter/laravel5-isocodes-validation.svg?style=flat-square&t=123)](https://packagist.org/packages/pixelpeter/laravel5-isocodes-validation)
-[![Software License](https://img.shields.io/badge/license-GPL-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![Travis Build](https://img.shields.io/travis/pixelpeter/laravel5-isocodes-validation/master.svg?style=flat-square)](https://travis-ci.org/pixelpeter/laravel5-isocodes-validation)
-[![Scrutinizer Quality](https://img.shields.io/scrutinizer/g/pixelpeter/laravel5-isocodes-validation.svg?style=flat-square)](https://scrutinizer-ci.com/g/pixelpeter/laravel5-isocodes-validation)
-[![Scrutinizer Build](https://img.shields.io/scrutinizer/build/g/pixelpeter/laravel5-isocodes-validation.svg?style=flat-square)](https://scrutinizer-ci.com/g/pixelpeter/laravel5-isocodes-validation)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/pixelpeter/laravel5-isocodes-validation.svg?style=flat-square)](https://packagist.org/packages/pixelpeter/laravel5-isocodes-validation)
 [![Total Downloads](https://img.shields.io/packagist/dt/pixelpeter/laravel5-isocodes-validation.svg?style=flat-square)](https://packagist.org/packages/pixelpeter/laravel5-isocodes-validation)
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
 [![Coverage Status](https://coveralls.io/repos/github/pixelpeter/laravel5-isocodes-validation/badge.svg?branch=master)](https://coveralls.io/github/pixelpeter/laravel5-isocodes-validation?branch=master)
+[![Tests](https://github.com/pixelpeter/laravel5-isocodes-validation/actions/workflows/run-tests.yml/badge.svg?branch=master)](https://github.com/pixelpeter/laravel5-isocodes-validation/actions/workflows/run-tests.yml)
+[![Fix PHP code style issues](https://github.com/pixelpeter/laravel5-isocodes-validation/actions/workflows/fix-php-code-style-issues.yml/badge.svg)](https://github.com/pixelpeter/laravel5-isocodes-validation/actions/workflows/fix-php-code-style-issues.yml)
+[![PHPStan](https://github.com/pixelpeter/laravel5-isocodes-validation/actions/workflows/phpstan.yml/badge.svg)](https://github.com/pixelpeter/laravel5-isocodes-validation/actions/workflows/phpstan.yml)
+[![dependabot-auto-merge](https://github.com/pixelpeter/laravel5-isocodes-validation/actions/workflows/dependabot-auto-merge.yml/badge.svg)](https://github.com/pixelpeter/laravel5-isocodes-validation/actions/workflows/dependabot-auto-merge.yml)
 
 A simple Laravel 5 wrapper for the [IsoCodes Validation library](https://github.com/ronanguilloux/IsoCodes) from ronanguilloux.
 
