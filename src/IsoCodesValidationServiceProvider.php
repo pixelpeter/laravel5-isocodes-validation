@@ -16,7 +16,7 @@ class IsoCodesValidationServiceProvider extends ServiceProvider
     {
         // load translation files
         $this->loadTranslationsFrom(
-            __DIR__ . '/../lang',
+            __DIR__.'/../lang',
             'validation'
         );
 
@@ -36,7 +36,7 @@ class IsoCodesValidationServiceProvider extends ServiceProvider
     /**
      * Return translation key for correspondent method name
      *
-     * @param  string $name
+     * @param  string  $name
      * @return string
      */
     private function getTranslationKeyFromMethodName($name)
@@ -50,7 +50,7 @@ class IsoCodesValidationServiceProvider extends ServiceProvider
     /**
      * Return the matching error message for the key
      *
-     * @param  string $key
+     * @param  string  $key
      * @return string
      */
     private function getErrorMessage($translator, $messages, $key)
